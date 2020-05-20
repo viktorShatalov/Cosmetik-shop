@@ -1,0 +1,39 @@
+@import "_preloader";
+@import "_fonts";
+@import "_variables";
+@import "_mixin";
+@import "_mixin-form";
+@import "_buttons";
+
+/* общие настройки */
+@import "_settings";
+
+// header
+@import "_header";
+
+// main
+@import "_main.scss";
+
+// category-page
+@import "_category-page.scss";
+
+// card-product
+@import "_card-product.scss";
+
+// cart-page
+@import "cart-page";
+
+// _ordering-page
+@import "_ordering-page";
+
+// footer
+@import "_footer.scss";
+
+// modal
+@import "_modal";
+
+// woocomerce
+@import "_woocomerce";
+
+// media-query
+@import "_media.scss";

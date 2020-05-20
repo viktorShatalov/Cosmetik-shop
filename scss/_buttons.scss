@@ -1,0 +1,21 @@
+@import "./mixin";
+@import "./variables";
+@import ".//fonts";
+
+// // кнопки
+@mixin btn {
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1em;
+  @include transition;
+}
+@mixin cart-btn {
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include transition;
+}

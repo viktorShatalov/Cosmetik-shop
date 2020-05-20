@@ -1,0 +1,51 @@
+#modal {
+  .uk-modal-dialog {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 5px;
+  }
+}
+.modal-body {
+  #wpcf7-f119-o1 {
+    form {
+      .wpcf7-not-valid-tip {
+        font-size: small;
+      }
+      legend {
+        font-size: 1.4em;
+        color: $color_sale-attention;
+        font-weight: bold;
+        text-align: center;
+        margin: 20px auto;
+      }
+      p {
+        margin: 10px auto;
+        input {
+          border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+          color: $color_category-menu_text;
+          width: 100%;
+          padding: 5px 10px;
+          margin: 0 5px;
+          font-size: 1em;
+          margin: 0 auto;
+          max-width: 300px;
+        }
+        input[type="submit"] {
+          border-bottom: none;
+          background-color: $color_bg_header-bottom__row;
+
+          height: 40px;
+          color: $color_white;
+          margin-top: 30px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+div.wpcf7-response-output {
+  font-size: 0.8em;
+  margin: 0;
+  border: none;
+}
