@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин "Корзинка"</title>
+  <title>Косметика карточка</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/jquery/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
@@ -19,325 +20,267 @@
 <body>
   <!-- header -->
   <header id="header">
+    <div class="mobile__content">
+      <a class="category__link" href="http://korzinka11.ru/shop/">Каталог</a>
+      <div class="mobile__content-description">
+        <div class="contacts__phone">
+          <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
+          <p>
+            с 9:00 до 22:00<br>
+            ежедневно
+          </p>
+        </div>
+      </div>
+      <div class="close-menu">
+        <p>Закрыть меню</p>
+      </div>
+    </div>
     <div class="top__row">
       <div class="conteiner m-auto">
-        <div class="logo">
-          <a href="/">
-            <img src="img/logo/logo.png" alt="Логотип Магазина 'Карзинка'"></a>
+        <div class="social">
+          <p>Присоединяйтесь к нам: </p>
+          <span>
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+              </li>
+            </ul>
+          </span>
         </div>
-        <nav class="menu__items">
+        <div class="change__lang">
+          <p> Выберите язык:</p>
           <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Оплата</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="active" href="#">Рус.</a></li>
+            <li><a href="#">Укр.</a></li>
           </ul>
-        </nav>
-        <div class="cabinet">
-          <a href="#">
-            <img src="img/icon/noun_personal.png" alt="personal icon">
-            <span>Личный кабинет</span>
-          </a>
         </div>
       </div>
     </div>
     <div class="bottom__row">
       <div class="conteiner m-auto">
-        <div class="catalog__menu">
-          <span class="burger__catalog container-icon">
-            <span></span>
-          </span>
-          <a class="category__link " href="#">Каталог товаров</a>
-          <div class="category">
-            <div class="category__box-menu">
-              <ul class="category__menu-items">
-                <li data-filter=".item1">Категория простая</li>
-                <li data-filter=".item2">Выделенная категория</li>
-                <li data-filter=".item3">Категория с длинным названием в две строки</li>
-                <li data-filter=".item4">Категория простая</li>
-                <li data-filter=".item5">Категория простая</li>
-                <li data-filter=".item6">Категория простая</li>
-                <li data-filter=".item7">Категория простая</li>
-                <li data-filter=".item8">Категория простая</li>
-                <li data-filter=".item9">Категория простая</li>
-                <li data-filter=".item10">Категория простая</li>
-                <li data-filter=".item11">Категория простая</li>
-              </ul>
-              <div class="box__sub-menu">
-                <div class="category__sub-menu item1">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item2">
-                  <h3>
-                    Простая категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item3">
-                  <h3>
-                    Выделенная категория с длинным текстом
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item4">
-                  <h3>
-                    Еще одна категория категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item5">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item6">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item7">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item8">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item9">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item10">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item11">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-              </div>
+        <div class="bottom__row-top">
+          <div class="logo">
+            <a href="/">
+              <img src="img/logo/logo.png" alt="FaceCare">
+            </a>
+            <div class="burger"><span></span></div>
+          </div>
+          <div class="top__box">
+            <div class="contacts__phone">
+              <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
             </div>
-            <div class="category__description">
-              <p>
-                Если вы не нашли то, что искали, можете обратиться по телефону, мы уверены в том, что сможем вам помочь
-              </p>
+            <div class="cabinet">
+              <a href="#">
+                <img src="img/icon/social.png" alt="personal icon">
+              </a>
+            </div>
+            <div id="cart" class="cart">
+              <button class="cart__btn">
+                <img src="img/icon/commerce-and-shopping.png" alt="cart">
+                <span class="basket-btn__counter">29</span>
+              </button>
             </div>
           </div>
         </div>
-        <div class="search">
-          <input type="search" name="search" id="input__search" placeholder="Найти товар">
-          <button class="search__btn">
-            <img src="img/icon/search_icon.png" alt="img btn">
-          </button>
-        </div>
-        <div>
-          <p>
-            У нас бесплатная доставка!
-          </p>
-        </div>
-        <div class="contacts__phone">
-          <a href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
-        </div>
-        <div id="cart" class="cart">
-          <button class="cart__btn">
-            <img src="img/icon/noun_cart.png" alt="cart">
-          </button>
-          <a href="#">
-            Корзина
-          </a>
+        <div class="bottom__row-down">
+          <div class="catalog__menu">
+            <a class="category__link" href="#">Каталог товаров</a>
+            <div class="category">
+              <div class="category__box-menu">
+                <ul class="category__menu-items">
+                  <li data-filter=".item1">Парфумерія</li>
+                  <li data-filter=".item2">Макіяж</li>
+                  <li data-filter=".item3">Аксессуары</li>
+                  <li data-filter=".item4">Подарункові карти</li>
+                  <li data-filter=".item5">Дезодоранти</li>
+                  <li data-filter=".item6">Для волосся</li>
+                  <li data-filter=".item7">Живлення і відновлення</li>
+                  <li data-filter=".item8">Гелі для душу</li>
+                  <li data-filter=".item9">Креми і лосьони</li>
+                  <li data-filter=".item10">Набори</li>
+                </ul>
+                <div class="box__sub-menu">
+                  <div class="category__sub-menu item1">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item2">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item3">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item4">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item5">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item6">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item7">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item8">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item9">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item10">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="menu__items">
+            <ul>
+              <li><a href="/">Бренды</a></li>
+              <li><a href="#">Полезные статьи</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <button class="search__btn">
+              <img src="img/icon/interface.png" alt="search__btn">
+            </button>
+            <input type="search" name="search" id="input__search" placeholder="Что вы ищите?">
+          </div>
         </div>
       </div>
     </div>
@@ -346,854 +289,208 @@
   <main>
     <section id="card-product">
       <div class="conteiner m-auto">
+        <!-- breadcumps -->
+        <div id="breadcumbs">
+          <ul class="conteiner">
+            <li>
+              <a href="#">Facecare</a>
+            </li>
+            <li>
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a href="#">next page</a>
+            </li>
+          </ul>
+        </div>
         <div class="content">
           <div class="about__product">
             <div class="left">
-              <div class="slider-nav">
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-                <div class="slider__img">
-                  <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                </div>
-              </div>
               <div class="slider__for-box">
-                <div class="sale__attentionIcon">
-                  <span><strong>-25% cкидка</strong></span>
+                <div class="attentionIcon">
+                  <span class="new-icon">
+                    <img src="img/icon/new.png" alt="Новинки-иконка">
+                  </span>
                 </div>
                 <div class="slider-for">
                   <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
+                    <img data-lazy="img/product/25371.jpg" alt="Товар">
                   </div>
                   <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
+                    <img data-lazy="img/product/47462.jpg" alt="Товар">
                   </div>
                   <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
+                    <img data-lazy="img/product/perfume_PNG10271.jpg" alt="Товар">
                   </div>
                   <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
+                    <img data-lazy="img/product/perfume_PNG10277.jpg" alt="Товар">
                   </div>
-                  <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                  </div>
-                  <div class="slider__img">
-                    <img data-lazy="img/product/img.png" alt="Магазин продукты">
-                  </div>
+                </div>
+              </div>
+              <div class="slider-nav">
+                <div class="slider__img">
+                  <img data-lazy="img/product/25371.jpg" alt="Товар">
+                </div>
+                <div class="slider__img">
+                  <img data-lazy="img/product/47462.jpg" alt="Товар">
+                </div>
+                <div class="slider__img">
+                  <img data-lazy="img/product/perfume_PNG10271.jpg" alt="Товар">
+                </div>
+                <div class="slider__img">
+                  <img data-lazy="img/product/perfume_PNG10277.jpg" alt="Товар">
                 </div>
               </div>
             </div>
             <div class="rigth">
-              <div class="itemOfGoods">
-                <p>
-                  Артикул:<span> 7070707</span>
-                </p>
-              </div>
               <div class="about__items">
                 <div class="product__name">
-                  <p>
-                    Чай Greenfield Kenyan Sunrise
-                    черный 100 пакетиков по 2 г
-                  </p>
-                </div>
-                <div class="product__description">
-                  <p>
-                    Высокогорный кенийский чай из района Керичо. Отличается нежным ароматом, особой насыщенностью и
-                    полнотой янтарного настоя.
-                  </p>
+                  <span class="brand">Givenchy</span>
+                  <h1>
+                    The Golden Secret
+                  </h1>
+                  <div class="article">
+                    <p>Код товара: <span>S082251</span></p>
+                  </div>
                 </div>
                 <div class="product__price">
-                  <div>
+                  <div class="prices">
                     <div class="strikeout__price">
                       <p>
-                        <span>300,00</span>₽
+                        <span>122 000</span> руб.
                       </p>
                     </div>
                     <div class="current__price">
                       <p>
-                        <span>250,00</span>₽
+                        <span><strong>25 000</strong></span> руб.
                       </p>
                     </div>
                   </div>
-                  <div class="add-to-cart">
-                    <button type="submit" name="add__cart-btn" class="addCart__btn">
-                      <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                    </button>
-                    <div class="max__product-count">
-                      <p>
-                        Макс.<span> 25</span> шт. в<br> корзине
-                      </p>
-                    </div>
+                  <div class="quantity">
+                    <form>
+                      <input type="number" name="quantity__number" value="1">
+                    </form>
+                  </div>
+                  <div class="addToCart">
+                    <a class="addCart__btn">
+                      <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
+                    </a>
                   </div>
                 </div>
+                <div class="product__description hide">
+                  <p>
+                    В набор входят:
+                    <br><br>
+                    - Туалетная вода The Golden Secret;<br>
+                    - Дезодорант The Golden Secret.<br><br>
+                    Туалетная вода The Golden Secret от Antonio Banderas - это секретный символ победителя, чья сила
+                    обаяния и соблазнительности не знает границ. Композиция предназначается смелому мужчине с открытым
+                    взглядом, предпочитающему джинсы и классическую рубашку с расстегнутым воротником. Его образ
+                    непосредственен и выразителен, в нем нет ничего лишнего и отвлекающего внимание. Этот человек четко
+                    знает, чего хочет, поэтому верен своим принципам и понятию чести. Он выбирает одну единственную
+                    женщину, достойную внимания, чтобы открыть перед ней все грани своей романтичной натуры.
+                    Создатель эксклюзивной композиции - креативный парфюмер Christophe Raynaud.
+                    Купить парфюмы известных брендов для женщин и мужчин, найти идеальную композицию ароматов поможет
+                    интернет-магазин парфюмерии FaceCare.
+                  </p>
+                </div>
+                <a href="#" class="product__description-show">Читать полностью</a>
               </div>
             </div>
           </div>
           <!-- reviews and characteristics -->
-          <div class="other__descriptionProduct">
-            <div class="reviews__tabs">
-              <!-- This is the container of the toggling elements -->
-              <ul class="tabs" data-uk-switcher="{connect:'#first__tabs'}">
-                <li><a href="#">Описание</a></li>
-                <li><a href="#">Отзывы <span id="reviews__count"> 69 отзывов</span></a></li>
-              </ul>
-              <!-- This is the container of the content items -->
-              <ul id="first__tabs" class="uk-switcher">
+          <div class="reviews">
+            <h3>
+              Отзывы
+            </h3>
+            <div class="reviews_content">
+              <ul>
                 <li>
-                  <p>
-                    Описание и характеристики
-                  </p>
-                  <p>
-                    Высокогорный кенийский чай из района Керичо. Отличается нежным ароматом, особой насыщенностью и
-                    полнотой янтарного настоя. Идеально сочетается с молоком.
-                    <br>Хранить в сухом без посторонних запахов мест
-                  </p>
-                  <p>
-                    Срок годности 2 года.
-                  </p>
-                  <p>
-                    ТУ 9191-004-46951679-04
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Отзывы
-                  </p>
-                  <div class="review__box">
-                    <p class="review__name">Александр</p>
-                    <p class="review__text">
-                      Я постоянно пользуюсь услугами данного сайта, он сразу зацепил меня своим ассортиментом и
-                      приятными ценами.
-                    </p>
-                    <p class="review__data">
-                      20 апреля 2020 года
-                    </p>
-                  </div>
-                  <div class="review__box">
-                    <p class="review__name">Александр</p>
-                    <p class="review__text">
-                      Я постоянно пользуюсь услугами данного сайта, он сразу зацепил меня своим ассортиментом и
-                      приятными ценами.
-                    </p>
-                    <p class="review__data">
-                      20 апреля 2020 года
-                    </p>
-                  </div>
-                  <div class="review__box">
-                    <p class="review__name">Александр</p>
-                    <p class="review__text">
-                      Я постоянно пользуюсь услугами данного сайта, он сразу зацепил меня своим ассортиментом и
-                      приятными ценами.
-                    </p>
-                    <p class="review__data">
-                      20 апреля 2020 года
-                    </p>
-                  </div>
-                  <div class="review__box">
-                    <p class="review__name">Александр</p>
-                    <p class="review__text">
-                      Я постоянно пользуюсь услугами данного сайта, он сразу зацепил меня своим ассортиментом и
-                      приятными ценами.
-                    </p>
-                    <p class="review__data">
-                      20 апреля 2020 года
-                    </p>
-                  </div>
-                  <div class="review__box">
-                    <p class="review__name">Александр</p>
-                    <p class="review__text">
-                      Я постоянно пользуюсь услугами данного сайта, он сразу зацепил меня своим ассортиментом и
-                      приятными ценами.
-                    </p>
-                    <p class="review__data">
-                      20 апреля 2020 года
-                    </p>
-                  </div>
+
                 </li>
               </ul>
-            </div>
-            <div class="characteristics">
-              <p>
-                <strong>Характеристики</strong>
-              </p>
-              <div class="characteristics__description">
-                <ul>
-                  <li>
-                    <span><strong>В упаковке</strong></span>:
-                    <span>175×81×210 мм (Д×Ш×В)</span>
-                  </li>
-                  <li>
-                    <span><strong>Вес товара</strong></span>:
-                    <span> 0.344 кг</span>
-                  </li>
-                  <li>
-                    <span><strong>Сорт чая</strong></span>:
-                    <span>Черный</span>
-                  </li>
-                  <li>
-                    <span><strong>Фасовка</strong></span>:
-                    <span> В пакетиках</span>
-                  </li>
-                  <li>
-                    <span><strong>Бренд</strong></span>:
-                    <span>Greenfield</span>
-                  </li>
-                  <li>
-                    <span><strong>Страна</strong></span>:
-                    <span>Россия</span>
-                  </li>
-                  <li>
-                    <span><strong>Упаковка</strong></span>:
-                    <span>Картонная упаковка</span>
-                  </li>
-                </ul>
-              </div>
+              <form id="reviews">
+                <p>
+                  Оцените товар
+                </p>
+                <div class="stars">Звезды</div>
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="tel_id" placeholder="Номер телефона или e-mail">
+                <textarea name="text" id="text" placeholder="Текст вашего отзыва или коментария"></textarea>
+                <input type="file" name="foto" id="foto">
+                <input type="file" name="video" id="video">
+              </form>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- recomends -->
-    <section id="recomends">
-      <div class="conteiner m-auto">
-        <!-- This is the container of the toggling elements -->
-        <ul class="tabs" data-uk-switcher="{connect:'#recomends__tabs'}">
-          <li><a href="#">Рекомендуем</a></li>
-          <li><a href="#">С этим товаром покупают</a></li>
-          <li><a href="#">Похожие товары</a></li>
-        </ul>
-        <!-- This is the container of the content items -->
-        <ul id="recomends__tabs" class="uk-switcher">
-          <li>
-            <div class="slider_recomend">
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="slider_related">
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="slider_similar">
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-              <div class="slider__item">
-                <div class="item__img">
-                  <img data-lazy="img/product/slider_recomend.png" alt="Рекомендуемые товары">
-                </div>
-                <div class="item__name">
-                  <span>
-                    Чай черный Greenfield
-                    Tropical Sunset
-                    20 пирамидок
-                  </span>
-                </div>
-                <div class="item__price">
-                  <span>250,00</span> ₽
-                </div>
-                <div class="add-to-cart">
-                  <button type="submit" name="add__cart-btn" class="addCart__btn">
-                    <img src="img/icon/noun_cart.png" alt="Купить товар на дом">
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
   </main>
   <!-- footer -->
   <footer id="footer">
     <div class="conteiner m-auto">
-      <div class="footer__menu">
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo/logo-footer.png" alt="FaceCare">
+        </a>
+      </div>
+      <div class="footer__content">
         <nav class="footer__nav">
           <ul>
-            <li><a class="active" href="/">Главная</a></li>
-            <li><a href="#">О нас</a></li>
+            <h4>Про нас</h4>
+            <li><a aria-current="page" href="/">Про компанию</a></li>
+            <li><a href="#">Интернет-магазин</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <ul>
+            <h4>Помощь</h4>
+            <li><a aria-current="page" href="/">Помощь</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Оплата</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Условия продажи</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+          </ul>
+          <ul>
+            <h4>Для вас</h4>
+            <li><a aria-current="page" href="/">Для вас</a></li>
+            <li><a href="#">Дисконтная программа</a></li>
+            <li><a href="#">Подарочные карты</a></li>
+            <li><a href="#">Нишевая парфюмерия</a></li>
+            <li><a href="#">#КупуйОРИГІНАЛ</a></li>
+            <li><a href="#">Новости</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer__contacts">
-        <div class="footer__subscribe">
-          <p>Вы можете подписаться на рассылку выгодных предложений от нашего магазина:</p>
-          <input type="email" name="subscribe__email" id="subscribe__email" placeholder="Введите ваш e-mail">
-          <input type="button" value="Отправить">
-        </div>
-        <div class="footer__about">
+        <div class="footer__contacts">
           <div class="phone">
-            <p>Телефон:</p>
-            <a href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00</a>
-            <br>
-            <a href="tel:8 000 111-11-11">8 000 111-11-11</a>
+            <h4>Гарячая линия:</h4>
+            <a href="tel:0 800 50 888 0">0 800 50 888 0</a>
           </div>
           <div class="operating__mode">
-            <p>Режим работы:</p>
-            <p>с 9:00 до 22:00<br>
-              ежедневно</p>
+            <p>Ежедневно с 9:00 до 21:00</p>
+          </div>
+          <div class="social">
+            <p>Присоединяйтесь к нам: </p>
+            <span>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                </li>
+              </ul>
+            </span>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer__signature conteiner m-auto">
-      <p>
-        Copyright © 2020 Корзинка
-      </p>
-    </div>
   </footer>
+  <div class="footer__signature conteiner m-auto">
+    <p>
+      © FaceCare, 2020, Все права защищены
+    </p>
+  </div>
 </body>
 
 </html>

@@ -184,7 +184,6 @@ jQuery(document).ready(function () {
         asNavFor: '.slider-for',
         slidesToShow: 4,
         infinite: true,
-        vertical: true,
         autoplay: false,
         focusOnSelect: true,
         draggable: false,
@@ -260,5 +259,17 @@ jQuery(document).ready(function () {
         e.preventDefault()
     })
 
+    // show text
 
+    jQuery(document).ready(function () {
+        jQuery('.product__description-show').click(function () {
+            jQuery('.product__description').toggleClass('hide');
+            if (jQuery('.product__description').hasClass('hide')) {
+                jQuery('.product__description-show').html('Читать полностью');
+            } else {
+                jQuery('.product__description-show').html('Скрыть');
+            }
+            return false;
+        });
+    });
 })
