@@ -8,35 +8,16 @@
   width: 100%;
   background-color: $color_left_sidbar_bg;
   color: $color_left_sidbar_text;
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
   padding: 22px;
-  border-right: 3px solid rgba(151, 151, 151, 0.747);
   margin-bottom: 20px;
   a {
     color: $color_left_sidbar_text;
-  }
-  .link__back {
-    a {
-      margin: 0 0 0 15px;
-      border-bottom: 1px solid $color_text-description;
-      @include transition;
-      &:before {
-        content: "←";
-        margin: 0 3px 0 -15px;
-      }
-      &:hover {
-        color: $color_footer-linkMenu-active;
-        border-bottom: 1px solid $color_footer-linkMenu-active;
-      }
-    }
   }
 }
 #category {
   .category-page {
     .category__items {
       padding-bottom: 30px;
-      border-bottom: 3px solid rgba(151, 151, 151, 0.514);
     }
     .item {
       margin: 30px 40px 0 0;
@@ -47,7 +28,6 @@
           @include transition;
           &:hover {
             font-weight: bold;
-            color: $color_footer-linkMenu-active;
           }
         }
         &::after,
@@ -69,7 +49,6 @@
             @include transition;
             &:hover {
               font-weight: bold;
-              color: $color_footer-linkMenu-active;
             }
           }
         }
@@ -78,16 +57,6 @@
   }
   .filtr {
     padding: 30px 0 0;
-    h5 {
-      font-size: 1em;
-      color: $color_category-menu_text;
-      @include flex;
-      margin: 0 0 15px;
-      &::before {
-        content: url(../img/icon/filtr__icon.png);
-        margin: 0 10px 0 0;
-      }
-    }
     .type__of {
       p {
         font-size: 1em;
@@ -114,89 +83,44 @@
     padding: 30px 35px;
     margin-bottom: 20px;
     .name__of__category {
-      p {
+      h2 {
         color: $color_header_link;
-        font-size: 1.7em;
-        font-weight: bold;
-        letter-spacing: 1px;
+        font-size: 2em;
         margin-bottom: 30px;
+        width: 325px;
+        &::before {
+          width: 81px;
+        }
       }
     }
     .sorting {
       @include flex;
-      font-size: 0.785em;
+      justify-content: space-between;
       margin-bottom: 40px;
       align-items: center;
+      border-bottom: 1px solid $color_category-menu-border;
       form {
         margin: 10px 0;
       }
       legend {
-        color: $color_text-description;
+        color: $color_header_link;
       }
       select {
-        border: 1px solid $color_text-description;
         margin-left: 5px;
-        margin-right: 5px;
+        color: $color_header_link;
+        font-weight: bold;
+        font-size: 1em;
+        font-family: "Montserrat-Regular";
       }
     }
-    .product__items {
-      ul {
-        li {
-          margin: 0;
-          .sale__product-card {
-            display: grid;
-            grid-template-columns: 4fr 1fr;
-            box-shadow: none;
-            width: 100%;
-            margin: 5px 0;
-            padding: 0 5px;
-            @include transition;
-            &:hover {
-              @include boxShadow;
-            }
-            & > a {
-              display: grid;
-              grid-template-columns: 110px 2fr;
-              align-items: center;
-            }
-            .card__footer {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-              align-items: center;
-              justify-self: center;
-            }
-          }
-          .card__name {
-            border: none;
-            padding: 0;
-            max-width: 500px;
-            h3 {
-              overflow: inherit;
-              padding: 10px;
-              margin: 0 10px;
-              text-align: left;
-            }
-          }
-          .card__img {
-            padding: 5px;
-            img {
-              width: 100px;
-              height: 100px;
-              object-fit: contain;
-            }
-          }
-          .itemOfGoods {
-            margin: 3px auto 10px;
-          }
-          .addToCart {
-            margin: -60px 20px 0;
-          }
-          .add_to_cart_button {
-            img {
-              transform: translateX(13px);
-            }
-          }
-        }
+  }
+  .product__items {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      li {
+        margin-bottom: 20px;
       }
     }
   }
