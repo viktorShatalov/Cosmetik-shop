@@ -150,6 +150,7 @@
   font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: normal;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
