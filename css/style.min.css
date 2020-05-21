@@ -1119,7 +1119,7 @@ ins {
 }
 
 #brands .slider__brands {
-  padding: 20px 0;
+  padding: 29px 0;
   width: 95%;
   margin: 0 auto;
 }
@@ -1302,9 +1302,13 @@ ins {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8f8f8;
   border-radius: 15px;
-  padding: 10px;
+  padding: 10px 10px;
+  height: 65px;
 }
 
 .new__product-slider .new__product-card .card__footer .strikeout__price p,
@@ -1365,14 +1369,14 @@ ins {
 .product__items .best__product-card .addToCart .addCart__btn,
 .product__items .best__product-card .addToCart .add_to_cart_button,
 .product__items .best__product-card .addToCart button {
-  width: 78px;
-  height: 78px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
   background-color: #404040;
   cursor: pointer;
   position: absolute;
-  top: -12px;
-  left: -65px;
+  top: -36px;
+  left: -60px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border: 1px solid #404040;

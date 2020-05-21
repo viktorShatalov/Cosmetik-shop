@@ -54,7 +54,6 @@ jQuery(document).ready(function () {
         lazyLoad: "progressive",
         slidesToShow: 5,
         slidesToScroll: 1,
-        // variableWidth: true,
         autoplay: false,
         adaptiveHeight: true,
         autoplaySpeed: 3500,
@@ -85,7 +84,7 @@ jQuery(document).ready(function () {
         slidesToScroll: 3,
         slidesToShow: 5,
         variableWidth: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3500,
         variableWidth: true,
         responsive: [
