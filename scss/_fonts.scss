@@ -1,22 +1,32 @@
 @font-face {
-  font-family: "Gilroy-medium";
+  font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype"),
-    url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"),
-    url("../fonts/Gilroy/Gilroy-Medium.eot") format("eot");
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  // url("../fonts/Gilroy/Gilroy-Medium.woff") format("woff"),
+  // url("../fonts/Gilroy/Gilroy-Medium.eot") format("eot");
 }
 @font-face {
-  font-family: "Gilroy-Regular";
+  font-family: "Montserrat-Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"),
-    url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
-    url("../fonts/Gilroy/Gilroy-Regular.eot") format("eot");
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  // url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+  // url("../fonts/Gilroy/Gilroy-Regular.eot") format("eot");
 }
 @font-face {
-  font-family: "VAG-W-bold";
+  font-family: "Montserrat-LightItalic";
   font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/VAGWorld/vag-world-bold.ttf") format("truetype");
+  font-weight: normal;
+  src: url("../fonts/Montserrat-LightItalic.ttf") format("truetype");
+  // url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+  // url("../fonts/Gilroy/Gilroy-Regular.eot") format("eot");
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  // url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
+  // url("../fonts/Gilroy/Gilroy-Regular.eot") format("eot");
 }

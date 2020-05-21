@@ -1,119 +1,69 @@
 #footer {
-  padding: 80px 0;
+  padding: 25px 0 30px;
   background-color: $color_footer-bg;
-  a {
-    color: $color_footer-linkMenu;
+  a,
+  p,
+  h4 {
+    color: $color_footer-color;
+  }
+  h4 {
+    font-weight: normal;
+    text-transform: uppercase;
   }
   .conteiner {
-    @include flex;
-    justify-content: space-between;
-  }
-  .footer__nav ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
-    li {
-      font-size: 1.75em;
-      font-weight: bold;
-      margin-bottom: 19px;
-      a {
-        @include transition;
-        &[aria-current="page"] {
-          color: $color_footer-linkMenu-active;
-        }
-        &:hover {
-          color: $color_footer-linkMenu-active;
-        }
-      }
-    }
+    grid-template-columns: 260px 1fr;
+    grid-gap: 15px;
   }
-  .footer__menu {
-    flex: 0 1 48%;
+  .footer__content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 35px;
   }
-  .footer__contacts {
-    flex: 0 1 49%;
-    .footer__subscribe {
-      p {
-        font-size: 1.35em;
-        color: $color_text-description;
-        margin: 0 0 25px;
-      }
-      p.sbscrbr-form-error {
-        color: $color_danger;
-        font-size: medium;
-        margin: 0 0 5px;
-      }
-      p.sbscrbr-form-done {
-        color: rgba(0, 128, 0, 0.85);
-        font-size: medium;
-        position: absolute;
-        top: -20px;
-      }
-      #sbscrbr-form,
-      .mailpoet_form {
-        @include flex;
-        position: relative;
-        padding: 0;
-      }
-      input[type="email"],
-      input[name="sbscrbr_email"],
-      input[type="button"],
-      input[name="sbscrbr_submit_email"] {
-        border: 2px solid $color_footer-subscribe-btn;
-        height: 70px;
-        width: 100%;
-        max-width: 345px;
-        padding: 0 25px;
-        margin-bottom: 35px;
-        font-size: 1.5em;
-        color: $color_header_link;
-      }
-      input[type="button"],
-      input[type="submit"],
-      input[name="sbscrbr_submit_email"] {
-        max-width: 200px;
-        color: $color_white;
-        background-color: $color_footer-subscribe-btn;
-        @include transition;
-        cursor: pointer;
-        font-size: 1.5rem;
-        padding: 21px 18px;
-        height: 70px;
-      }
-    }
-    .footer__about {
-      @include flex;
-      line-height: 1.2;
-      font-family: "Gilroy-Regular";
-      .phone,
-      .operating__mode {
-        font-size: 1.75em;
-        margin-right: 70px;
-        p {
-          color: $color_text-description;
-        }
+  h4 {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    ul {
+      li {
+        font-size: 0.85em;
+        width: 190px;
+        margin-bottom: 5px;
         a {
-          color: $color_footer-linkMenu-active;
-          font-weight: bold;
-        }
-      }
-      .operating__mode {
-        p {
-          &:nth-child(2) {
-            color: $color_footer-linkMenu-active;
-            font-weight: bold;
-            letter-spacing: 1.5px;
+          @include transition;
+          &:hover {
+            @include hvrOpacity;
           }
         }
       }
     }
   }
+  .footer__contacts {
+    a,
+    p {
+      font-size: 0.85em;
+      margin-bottom: 5px;
+    }
+    .operating__mode {
+      margin-bottom: 25px;
+      p {
+        line-height: 1.2;
+      }
+    }
+  }
 }
 .footer__signature {
-  color: $color_signature;
-  font-family: "Gilroy-Regular";
+  background-color: $color_signature-bg;
+  color: $color_signature-color;
   P {
-    margin-top: -25px;
+    padding: 12px 0;
+    font-size: 0.8em;
+    text-align: center;
   }
 }
 .mailpoet_paragraph {

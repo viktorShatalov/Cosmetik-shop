@@ -16,53 +16,8 @@ jQuery(document).ready(function () {
     };
     preloader()
 
-    //  mobile-menu
-
-    jQuery('.burger').click(function () {
-        jQuery('.burger,.menu__items,.mobile__content').toggleClass('active');
-        jQuery('html,body').toggleClass('lock');
-    })
-    jQuery('.close-menu').click(function () {
-        jQuery('.burger,.menu__items,.mobile__content').removeClass('active');
-    })
-
-    // category dropdown menu
-
-    jQuery(".catalog__menu span").click(function () {
-        jQuery('.category').toggleClass('active', 'slow')
-    });
-
-    void function () {
-        "use strict";
-
-        const categoriesItems = document.querySelectorAll('.category__menu-items>li');
-        const categoriesSubMenuItems = document.querySelectorAll('.box__sub-menu>*');
-
-        Array.from(categoriesItems).forEach(item => {
-            item.addEventListener('mouseenter', (e) => {
-                showSubcategory(e);
-            })
-        });
-
-        Array.from(categoriesSubMenuItems).forEach(item => {
-            item.addEventListener('mouseleave', hideSubcategories);
-        });
-
-        function hideSubcategories() {
-            Array.from(categoriesSubMenuItems).forEach(item => item.style.display =
-                'none');
-        }
-
-        function showSubcategory(e) {
-            hideSubcategories();
-            const selectSubcategory = document.querySelector(
-                `.category__sub-menu${e.target.dataset.filter}`);
-            selectSubcategory.style.display = 'block';
-        }
-    }();
-
     // sliders
-    jQuery('.first__slider').slick({
+    jQuery('.first__slider,.last__slider').slick({
         arrows: false,
         dots: true,
         infinite: true,
@@ -70,8 +25,10 @@ jQuery(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
-        autoplay: true,
+        autoplay: false,
+        adaptiveHeight: true,
         autoplaySpeed: 3500,
+        centerMode: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -90,8 +47,37 @@ jQuery(document).ready(function () {
         ]
     });
 
+    jQuery('.slider__brands').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        lazyLoad: "progressive",
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        // variableWidth: true,
+        autoplay: false,
+        adaptiveHeight: true,
+        autoplaySpeed: 3500,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    });
 
-    jQuery('.sale__product-slider').slick({
+
+    jQuery('.new__product-slider,.best__product-slider').slick({
         arrows: true,
         dots: false,
         infinite: true,
@@ -211,6 +197,51 @@ jQuery(document).ready(function () {
         ]
     });
 
+
+    //  mobile-menu
+
+    jQuery('.burger').click(function () {
+        jQuery('.burger,.menu__items,.mobile__content').toggleClass('active');
+        jQuery('html,body').toggleClass('lock');
+    })
+    jQuery('.close-menu').click(function () {
+        jQuery('.burger,.menu__items,.mobile__content').removeClass('active');
+    })
+
+    // category dropdown menu
+
+    jQuery(".catalog__menu span").click(function () {
+        jQuery('.category').toggleClass('active', 'slow')
+    });
+
+    void function () {
+        "use strict";
+
+        const categoriesItems = document.querySelectorAll('.category__menu-items>li');
+        const categoriesSubMenuItems = document.querySelectorAll('.box__sub-menu>*');
+
+        Array.from(categoriesItems).forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                showSubcategory(e);
+            })
+        });
+
+        Array.from(categoriesSubMenuItems).forEach(item => {
+            item.addEventListener('mouseleave', hideSubcategories);
+        });
+
+        function hideSubcategories() {
+            Array.from(categoriesSubMenuItems).forEach(item => item.style.display =
+                'none');
+        }
+
+        function showSubcategory(e) {
+            hideSubcategories();
+            const selectSubcategory = document.querySelector(
+                `.category__sub-menu${e.target.dataset.filter}`);
+            selectSubcategory.style.display = 'block';
+        }
+    }();
 
     // filtr
     jQuery.easing.def = "easeInOutQuad";

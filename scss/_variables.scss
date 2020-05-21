@@ -1,33 +1,59 @@
 // width
-$widthContent: 1305px;
+$widthContent: 1140px;
+$maxWidth: 1920px;
+
 // colors
+// settings
 $color_white: rgb(255, 255, 255);
 $color_black: rgb(0, 0, 0);
 $color_danger: rgba(255, 0, 0, 100%);
+$color_link: rgb(0, 0, 0);
 $color_sale-attention: rgb(255, 113, 0);
-$color_bg-main: rgb(255, 255, 255);
-$color_bg_header-top__ow: rgb(255, 255, 255);
+$color_p_color: rgb(0, 0, 0);
+$color_color: rgb(0, 0, 0);
+
+// header
+$color_bg_header-top__bg: rgb(64, 64, 64);
+$color_headers: rgb(0, 0, 0);
+$color_bg_header-top__color: rgb(255, 255, 255);
+$color_bg_header-top__link_color-active: rgb(255, 255, 255);
+$color_bg_header-top__link_color: hsl(0, 0%, 43%);
 $color_bg_header-bottom__row: rgb(255, 255, 255);
+$color_burger-menu: rgb(255, 255, 255);
+$color_header_link: rgb(0, 0, 0);
+
+$color_search-bg: rgb(255, 255, 255);
+$color_search-color: rgb(0, 0, 0);
+$color_search-border: rgb(222, 222, 222);
+
+$color_category__link-bg: rgb(64, 64, 64);
+$color_category__link-color: rgb(255, 255, 255);
 $color_bg_category-menu: rgb(255, 227, 205);
 $color_category-menu_text: rgb(51, 51, 51);
 $color_subCategory-menu_text: rgb(102, 102, 102);
-$color_burger-menu: rgb(255, 255, 255);
-$color_header_link: rgb(0, 0, 0);
-$color_search-bg: rgb(255, 227, 205);
-$color_slider_arows: rgb(255, 115, 3);
-$color_headers: rgb(255, 255, 255);
-$color_headers-toWhiteBg: rgb(255, 120, 0);
+
+// main
 $color_text-description: rgba(112, 112, 112, 0.761);
-$color_footer-bg: rgb(60, 60, 60);
+$color_brands-bg: rgb(248, 248, 248);
+$color_bg-main: rgb(255, 255, 255);
+
+$color_h2-before-bg: rgb(248, 248, 248);
+
+// footer
+$color_footer-bg: rgb(64, 64, 64);
+$color_footer-color: rgb(255, 255, 255);
 $color_footer-linkMenu: rgb(102, 102, 102);
 $color_footer-linkMenu-active: rgb(255, 120, 0);
 $color_footer-subscribe-btn: rgb(255, 113, 0);
-$color_signature: rgb(153, 153, 153);
+$color_signature-color: rgb(153, 153, 153);
+$color_signature-bg: rgb(255, 255, 255);
 
-$color_card__product-text: rgba(51, 51, 51, 0.74);
+// sliders
+$color_slider_dot-li_shadow: rgb(0, 0, 0);
+$color_slider_dot-li_bg: rgb(255, 255, 255);
+$color_slider_arows: transparent;
 
 // category-page
-
 $color_left_sidbar_bg: rgb(240, 240, 240);
 $color_left_sidbar_text: rgba(51, 51, 51, 0.78);
 
@@ -40,9 +66,18 @@ $color_card_name: rgb(51, 51, 51);
 $color_card_right_bg: rgb(247, 247, 247);
 $color_tabs: rgb(227, 227, 227);
 $color_tabs_link: rgb(150, 155, 151);
+$color_card__product-text: rgb(0, 0, 0);
+$color_card__product-border: rgba(0, 0, 0, 0.205);
+$color_strikeout__price: rgb(137, 137, 137);
+$color_card__footer: rgb(248, 248, 248);
+$color_addToCart-btn: rgb(64, 64, 64);
+$color_addToCart-btn-hover: rgb(255, 255, 255);
 
 // cart
 $color_cart_attribute: rgb(222, 222, 222);
 $color_cart_text: rgb(161, 161, 161);
 $color_cart_border-item: rgba(222, 222, 222, 0.74);
 $color_step_bg: rgb(248, 248, 248);
+$color_basket-btn__counter-bg: rgb(64, 64, 64);
+$color_basket-btn__counter-color: rgb(255, 255, 255);
+$color_basket-btn__counter-fz: 12px;
