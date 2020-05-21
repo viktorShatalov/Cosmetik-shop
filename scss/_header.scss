@@ -193,7 +193,7 @@
         border-right: 4px solid $color_white;
         display: block;
         @include transition;
-        background-color: #ffe3cd;
+        background-color: $color_bg_header-top__bg;
         li {
           @include transition;
           white-space: initial;
@@ -215,7 +215,7 @@
         }
       }
       .box__sub-menu > * {
-        background-color: #ffe3cd;
+        background-color: $color_bg_header-top__bg;
         padding: 25px;
         display: none;
         height: 100%;
@@ -250,16 +250,6 @@
 
       .visuallyhidden {
         opacity: 0 !important;
-      }
-
-      .category__description {
-        background-color: $color_white;
-        p {
-          color: $color_subCategory-menu_text;
-          text-transform: initial;
-          padding: 10px 0;
-          text-align: center;
-        }
       }
     }
   }

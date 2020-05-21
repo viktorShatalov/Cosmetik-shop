@@ -53,7 +53,7 @@ jQuery(document).ready(function () {
         infinite: true,
         lazyLoad: "progressive",
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         autoplay: false,
         adaptiveHeight: true,
         autoplaySpeed: 3500,
@@ -75,6 +75,37 @@ jQuery(document).ready(function () {
         ]
     });
 
+    jQuery('.category__slider,.category__slider-second').slick({
+        arrows: false,
+        dots: false,
+        infinite: false,
+        lazyLoad: "progressive",
+        slidesToShow: 3,
+        variableWidth: true,
+        autoplay: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: false,
+                    // centerMode: true,
+                }
+            }
+        ]
+    });
 
     jQuery('.new__product-slider,.best__product-slider').slick({
         arrows: true,
@@ -172,30 +203,6 @@ jQuery(document).ready(function () {
         ]
     });
 
-    // card-product slider tabs
-    jQuery('.slider_recomend,.slider_related,.slider_similar').slick({
-        arrows: true,
-        dots: false,
-        lazyLoad: "progressive",
-        infinite: true,
-        slidesToShow: 7,
-        slidesToScroll: 3,
-        variableWidth: true,
-        autoplay: true,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    centerMode: true,
-                    centerPadding: '0',
-                    arrows: false,
-                    dots: false,
-                }
-            }
-        ]
-    });
-
 
     //  mobile-menu
 
@@ -209,8 +216,9 @@ jQuery(document).ready(function () {
 
     // category dropdown menu
 
-    jQuery(".catalog__menu span").click(function () {
+    jQuery(".category__link").click(function (e) {
         jQuery('.category').toggleClass('active', 'slow')
+        e.preventDefault()
     });
 
     void function () {
