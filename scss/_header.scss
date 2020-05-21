@@ -119,65 +119,41 @@
     @include flex;
     align-items: center;
     position: relative;
-    .catalog__menu-icon {
-      &::after {
-        content: url(../img/icon/arrows_accaunt.png);
-        transform: rotate(180deg);
-        margin: 0 0 0 27px;
-        display: none;
-      }
-    }
     .category__link {
       text-transform: uppercase;
       background-color: $color_category__link-bg;
       color: $color_category__link-color;
       padding: 9px 35px;
       border-radius: 10px;
-      @include transition;
+      transition: all 0.15s ease;
       &:hover {
         background-color: $color_category__link-color;
         color: $color_category__link-bg;
       }
-    }
-    .burger__catalog {
-      display: block;
-      width: 22px;
-      height: 16px;
-      position: relative;
-      margin: 0 10px 0 0;
-    }
-    .burger__catalog span {
-      position: absolute;
-      background-color: $color_white;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      top: 7px;
-    }
-    .burger__catalog::before,
-    .burger__catalog::after {
-      content: "";
-      background-color: $color_white;
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      left: 0;
-    }
-    .burger__catalog::before {
-      top: 0;
-    }
-    .burger__catalog::after {
-      bottom: 0;
+      &.active {
+        background-color: $color_category__link-color;
+        color: $color_category__link-bg;
+        border: 1px solid $color_category-menu-border;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        &::after {
+          content: url(../img/icon/arrows_accaunt.png);
+          transform: rotate(360deg);
+          position: absolute;
+          right: 8px;
+        }
+      }
     }
     .category {
       z-index: 4;
       width: 100%;
       background-color: $color_bg_category-menu;
       position: absolute;
-      top: 48px;
+      top: 41px;
       left: 0;
-      font-size: 0.7em;
+      font-size: 0.8em;
       display: none;
+      border-radius: 10px;
       &.active {
         display: block;
       }
@@ -187,35 +163,34 @@
       a {
         display: inline-block;
         margin: 8px 40px 12px 15px;
-        font-weight: bold;
+        @include transition;
+        &:hover {
+          font-weight: bold;
+        }
       }
       .category__menu-items {
-        border-right: 4px solid $color_white;
         display: block;
         @include transition;
-        background-color: $color_bg_header-top__bg;
+        background-color: $color_bg_category-menu;
+        border: 1px solid $color_category-menu-border;
+        border-right: none;
+        border-top: none;
+        border-bottom-left-radius: 10px;
         li {
           @include transition;
           white-space: initial;
           padding: 8px 40px 12px 15px;
-          font-weight: bold;
           cursor: pointer;
-          width: 225px;
-          a {
-            color: $color_category-menu_text;
-
-            margin: 0;
-          }
+          width: 256px;
+          color: $color_category-menu_text;
+          @include transition;
           &:hover {
-            background-color: $color_white;
-            width: 230px;
-            margin-left: -5px;
-            padding-left: 20px;
+            font-weight: bold;
           }
         }
       }
       .box__sub-menu > * {
-        background-color: $color_bg_header-top__bg;
+        background-color: $color_bg_category-menu;
         padding: 25px;
         display: none;
         height: 100%;
@@ -226,19 +201,23 @@
         }
       }
       .category__sub-menu {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: 1px solid $color_category-menu-border;
+        border-left: none;
         ul {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         li {
           display: block;
-          width: 33%;
+          width: 25%;
           a {
             white-space: nowrap;
-            color: $color_subCategory-menu_text;
+            color: $color_category-menu_text;
             padding: 0px 15px 0px 0;
             &:hover {
-              opacity: 0.75;
+              @include hvrOpacity;
             }
           }
         }
@@ -310,7 +289,7 @@
   }
   ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 5px;
     li {
       a {
@@ -324,6 +303,9 @@
 }
 .social {
   ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
     li {
       background-color: $color_white;
       width: 25px;

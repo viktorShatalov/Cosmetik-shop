@@ -217,7 +217,7 @@ jQuery(document).ready(function () {
     // category dropdown menu
 
     jQuery(".category__link").click(function (e) {
-        jQuery('.category').toggleClass('active', 'slow')
+        jQuery('.category,.category__link').toggleClass('active', 'slow')
         e.preventDefault()
     });
 
@@ -235,6 +235,7 @@ jQuery(document).ready(function () {
 
         Array.from(categoriesSubMenuItems).forEach(item => {
             item.addEventListener('mouseleave', hideSubcategories);
+
         });
 
         function hideSubcategories() {
