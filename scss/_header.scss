@@ -92,6 +92,7 @@
       background-color: transparent;
       cursor: pointer;
       position: relative;
+      margin: 0 10px 0 0px;
       .basket-btn__counter {
         position: absolute;
         top: 0;
@@ -189,11 +190,14 @@
         li {
           @include transition;
           white-space: initial;
-          padding: 8px 40px 12px 15px;
+          // padding: 8px 40px 12px 15px;
           cursor: pointer;
           width: 256px;
           color: $color_category-menu_text;
           @include transition;
+          a {
+            font-weight: bold;
+          }
           &:hover {
             font-weight: bold;
           }
@@ -201,9 +205,10 @@
       }
       .box__sub-menu {
         margin-left: -1px;
+        max-width: 860px;
         & > * {
           background-color: $color_bg_category-menu;
-          padding: 25px;
+          padding: 15px 10px;
           display: none;
           height: 100%;
           h3 {
@@ -219,18 +224,31 @@
         border: 1px solid $color_category-menu-border;
         border-left: none;
         ul {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        li {
-          display: block;
-          width: 25%;
-          a {
-            white-space: nowrap;
-            color: $color_category-menu_text;
-            padding: 0px 15px 0px 0;
-            &:hover {
-              @include hvrOpacity;
+          display: flex;
+          flex-wrap: wrap;
+          width: 1000px;
+          li {
+            display: block;
+            width: 21%;
+            a {
+              white-space: nowrap;
+              color: $color_category-menu_text;
+              font-weight: bold;
+              margin: 5px 10px;
+              &:hover {
+                @include hvrOpacity;
+              }
+            }
+            ul {
+              width: 100%;
+              li {
+                width: 100%;
+                a {
+                  font-size: 0.8em;
+                  font-weight: normal;
+                  padding: 0;
+                }
+              }
             }
           }
         }

@@ -3,6 +3,11 @@
   .m-auto {
     max-width: $maxWidth;
   }
+  .first__slider {
+    img {
+      width: 100vw;
+    }
+  }
 }
 
 // brands
@@ -13,8 +18,8 @@
   }
   .slider__brands {
     max-width: $widthContent;
-    padding: 29px 0;
-    width: 95%;
+    padding: 20px 0;
+    width: 80%;
     margin: 0 auto;
     .slider__brands-item {
       margin: 0 20px;
@@ -31,16 +36,15 @@
     margin: 40px 0;
     a {
       &:nth-child(2) {
-        margin: 0 20px;
+        margin: 0 30px;
       }
       .item {
         position: relative;
         @include transition;
         width: 360px;
         height: 160px;
-        margin: 0 0 25px;
+        margin: 0 0 30px;
         background-image: url(../img/category/category_item-bg.png);
-
         img,
         .category__description {
           position: absolute;
@@ -85,7 +89,7 @@
   .new__product-card,
   .best__product-card {
     background-color: $color_white;
-    width: 265px;
+    width: 270px;
     padding: 27px 6px 6px;
     border-radius: 5px;
     font-family: "Montserrat-Medium";

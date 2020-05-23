@@ -250,15 +250,6 @@ jQuery(document).ready(function () {
         }
     }();
 
-    // filtr
-    jQuery.easing.def = "easeInOutQuad";
-    jQuery('li.button a').click(function (e) {
-        var dropDown = jQuery(this).parent().next();
-        jQuery('.dropdown').not(dropDown).slideUp('slow');
-        dropDown.slideToggle('slow');
-        e.preventDefault()
-    })
-
     // show text
 
     jQuery(document).ready(function () {

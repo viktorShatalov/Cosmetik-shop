@@ -4,11 +4,6 @@
     overflow-x: hidden;
     font-size: 16px;
     h2 {
-      padding: 40px 0;
-      &::after,
-      &::before {
-        content: none;
-      }
     }
   }
 }
