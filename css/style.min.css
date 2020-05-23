@@ -220,7 +220,6 @@
 body {
   font-family: "Montserrat-Regular";
   font-size: 18px;
-  margin: 0 auto;
 }
 
 main {
@@ -230,7 +229,6 @@ main {
 
 .conteiner {
   max-width: 1140px;
-  margin: 0;
 }
 
 .m-auto {
@@ -2457,7 +2455,7 @@ button[name="clear-cart"] {
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
-  grid-gap: 35px;
+  grid-gap: 15px;
 }
 
 #footer h4 {
@@ -2470,13 +2468,12 @@ button[name="clear-cart"] {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
 }
 
 #footer .footer__nav ul li {
   font-size: 0.85em;
   width: 190px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #footer .footer__nav ul li a {
@@ -3344,28 +3341,8 @@ div.wpcf7-response-output {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 1360px) {
-  body {
-    overflow-x: hidden;
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-  #category .right__content,
-  #category .left__sidebar {
-    max-width: 100%;
-    border: none;
-    border-radius: 7px;
-  }
-  #category .right__content {
-    padding: 30px 20px;
-  }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 880px) {
   body {
-    overflow-x: hidden;
     font-size: 14px;
   }
   #cart .conteiner,
@@ -3389,6 +3366,7 @@ div.wpcf7-response-output {
   h2::after, h2::before {
     content: none;
   }
+  #header .bottom__row #cart,
   .menu__items,
   .cabinet,
   #header .bottom__row .catalog__menu,
@@ -3434,7 +3412,7 @@ div.wpcf7-response-output {
     padding: 0;
   }
   .logo {
-    margin: 15px 0;
+    margin: 15px auto;
     width: 190px;
   }
   .logo a {
@@ -3584,51 +3562,13 @@ div.wpcf7-response-output {
     max-height: 95px;
     overflow: hidden;
   }
-  #footer {
-    padding: 40px 0 0 !important;
-  }
-  #footer .footer__menu,
-  #footer .footer__contacts {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-  }
-  .footer__signature {
-    background-color: white;
-  }
-  .footer__signature p {
-    color: white;
-    margin: 25px auto;
-  }
-  #footer .footer__contacts .footer__subscribe input[type="email"],
-  #footer .footer__contacts .footer__subscribe input[type="button"],
-  #footer
-.footer__contacts
-.footer__subscribe
-input[name="sbscrbr_submit_email"] {
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
-  }
-  #footer .footer__contacts .footer__subscribe p {
-    margin: 0 auto 25px;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  #footer .footer__contacts .footer__about {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #footer .footer__contacts .footer__about .phone,
-  #footer .footer__contacts .footer__about .operating__mode {
-    font-size: 1.25em;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  #footer .footer__contacts .footer__about .phone p,
-  #footer .footer__contacts .footer__about .operating__mode p {
-    text-align: center;
+  #footer .conteiner,
+  #footer .footer__content,
+  #footer .footer__nav {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   #category .right__content,
   #category .left__sidebar {
@@ -3660,11 +3600,9 @@ input[name="sbscrbr_submit_email"] {
   #category .right__content .product__items ul li .add_to_cart_button {
     left: 85px;
   }
-  #card-product .characteristics,
-  #card-product .reviews__tabs {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+  #card-product .content .about__product {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #card-product .rigth .about__items .product__description,
   #card-product .rigth .about__items .product__price .add-to-cart .max__product-count,

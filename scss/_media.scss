@@ -1,31 +1,11 @@
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 1360px) {
-  body {
-    overflow-x: hidden;
-    font-size: 16px;
-    h2 {
-    }
-  }
-}
-@media only screen and (min-width: 320px) and (max-width: 1024px) {
-  // category page
-  #category {
-    .right__content,
-    .left__sidebar {
-      max-width: 100%;
-      border: none;
-      border-radius: 7px;
-    }
-    .right__content {
-      padding: 30px 20px;
-    }
-  }
+@media only screen and (min-width: 880px) and (max-width: 1024px) {
 }
 
 // Mobile *******************************************************************************************
 @media only screen and (min-width: 320px) and (max-width: 880px) {
   body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     font-size: 14px;
   }
   #cart,
@@ -51,6 +31,7 @@
       content: none;
     }
   }
+  #header .bottom__row #cart,
   .menu__items,
   .cabinet,
   #header .bottom__row .catalog__menu,
@@ -98,7 +79,7 @@
     }
   }
   .logo {
-    margin: 15px 0;
+    margin: 15px auto;
     width: 190px;
     a {
       z-index: 5;
@@ -236,49 +217,14 @@
     }
   }
   #footer {
-    padding: 40px 0 0 !important;
-    .footer__menu,
-    .footer__contacts {
-      flex: 0 1 100%;
-    }
-  }
-  .footer__signature {
-    background-color: $color_bg_header-bottom__row;
-    p {
-      color: $color_white;
-      margin: 25px auto;
+    .conteiner,
+    .footer__content,
+    .footer__nav {
+      grid-template-columns: 1fr;
+      justify-self: center;
     }
   }
 
-  #footer .footer__contacts .footer__subscribe input[type="email"],
-  #footer .footer__contacts .footer__subscribe input[type="button"],
-  #footer
-    .footer__contacts
-    .footer__subscribe
-    input[name="sbscrbr_submit_email"] {
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
-  }
-  #footer .footer__contacts .footer__subscribe p {
-    margin: 0 auto 25px;
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-  }
-  #footer .footer__contacts .footer__about {
-    justify-content: space-around;
-  }
-  #footer .footer__contacts .footer__about .phone,
-  #footer .footer__contacts .footer__about .operating__mode {
-    font-size: 1.25em;
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  #footer .footer__contacts .footer__about .phone p,
-  #footer .footer__contacts .footer__about .operating__mode p {
-    text-align: center;
-  }
   // category page
   #category {
     .right__content,
@@ -315,9 +261,10 @@
   }
   // card-page
   #card-product {
-    .characteristics,
-    .reviews__tabs {
-      flex: 1 1 100%;
+    .content {
+      .about__product {
+        grid-template-columns: 1fr;
+      }
     }
     .rigth .about__items .product__description,
     .rigth .about__items .product__price .add-to-cart .max__product-count,
