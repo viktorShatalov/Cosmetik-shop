@@ -1,12 +1,13 @@
 @import "_preloader";
+
+/* общие настройки */
+@import "_settings";
+
 @import "_fonts";
 @import "_variables";
 @import "_mixin";
 @import "_mixin-form";
 @import "_buttons";
-
-/* общие настройки */
-@import "_settings";
 
 // header
 @import "_header";

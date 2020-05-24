@@ -146,7 +146,7 @@ jQuery(document).ready(function () {
     jQuery('.slider-for').slick({
         arrows: false,
         dots: false,
-        infinite: true,
+        infinite: false,
         autoplay: false,
         lazyLoad: "progressive",
         asNavFor: '.slider-nav',
@@ -183,7 +183,7 @@ jQuery(document).ready(function () {
         lazyLoad: "progressive",
         asNavFor: '.slider-for',
         slidesToShow: 4,
-        infinite: true,
+        infinite: false,
         autoplay: false,
         focusOnSelect: true,
         draggable: false,

@@ -100,6 +100,7 @@ ul {
 ins {
   background: none;
 }
+// logo
 .logo {
   img {
     width: 260px;
@@ -134,7 +135,7 @@ ins {
     }
   }
 }
-
+// sliders arrows
 .slick-prev,
 .slick-next {
   content: "";
@@ -181,43 +182,38 @@ ins {
     right: 10px;
   }
 }
+
+.slider-for,
 .slider-nav {
   .slick-prev,
   .slick-next {
-    position: absolute;
-    z-index: 2;
-    color: transparent;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    cursor: pointer;
+    top: -235%;
+    border: 1px solid $color_slider_arrow-border;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: $color_slider_arrow-bg;
+    @include transition;
+    &:hover {
+      @include hvrOpacity;
+    }
   }
-  .slick-prev {
-    bottom: 20px;
-    background-image: linear-gradient(
-      360deg,
-      rgb(254, 254, 254) 0%,
-      rgba(254, 254, 254, 0) 100%
-    );
-    width: 105px;
+  .slick-prev,
+  .slick-next {
     &::before {
-      content: url(../img/icon/arrow_down-slider_nav.png);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -25px;
+      top: 16px;
+      left: 16px;
     }
   }
   .slick-next {
-    top: -70px;
+    right: 0;
     &::before {
-      content: url(../img/icon/arrow_up-slider_nav.png);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 13px;
+      right: 10px;
     }
   }
 }
+
 // breadcumbs
 #breadcumbs {
   padding: 20px 0 10px;
@@ -302,6 +298,8 @@ ins {
     }
   }
 }
+
+// contakts
 #contakts {
   .map {
     overflow: hidden;
@@ -326,6 +324,8 @@ ins {
     }
   }
 }
+
+// shipping
 #shipping {
   h1 {
     font-family: "Gilroy-medium";
@@ -341,4 +341,41 @@ ins {
       }
     }
   }
+}
+
+// mobile__content
+.mobile__content {
+  display: none;
+  .category__link {
+    text-align: center;
+    display: block;
+    padding: 7px 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .mobile__content-description {
+    background-color: $color_bg_header-bottom__row;
+    padding: 30% 0 0;
+    color: $color_white;
+    line-height: 1.4;
+    height: 100vh;
+    font-size: 1rem;
+    a {
+      color: $color_white;
+    }
+  }
+  .close-menu {
+    background-color: $color_white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    p {
+      color: $color_header_link;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+  }
+}
+.mobile__content.active {
+  display: block;
 }

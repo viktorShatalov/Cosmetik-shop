@@ -47,6 +47,15 @@
               <li>
                 <a href="#"><i class="fa fa-odnoklassniki"></i></a>
               </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+              </li>
             </ul>
           </span>
         </div>
@@ -314,6 +323,17 @@
         </div>
         <div class="content">
           <div class="about__product">
+            <div class="mobile__content">
+              <div class="product__name">
+                <span class="brand">Givenchy</span>
+                <h1>
+                  The Golden Secret
+                </h1>
+                <div class="article">
+                  <p>Код товара: <span>S082251</span></p>
+                </div>
+              </div>
+            </div>
             <div class="left">
               <div class="slider__for-box">
                 <div class="attentionIcon">
@@ -334,6 +354,9 @@
                   <div class="slider__img">
                     <img data-lazy="img/product/perfume_PNG10277.jpg" alt="Товар">
                   </div>
+                  <div class="slider__img">
+                    <img data-lazy="img/product/47462.jpg" alt="Товар">
+                  </div>
                 </div>
               </div>
               <div class="slider-nav">
@@ -349,6 +372,9 @@
                 <div class="slider__img">
                   <img data-lazy="img/product/perfume_PNG10277.jpg" alt="Товар">
                 </div>
+                <div class="slider__img">
+                  <img data-lazy="img/product/47462.jpg" alt="Товар">
+                </div>
               </div>
             </div>
             <div class="rigth">
@@ -363,26 +389,28 @@
                   </div>
                 </div>
                 <div class="product__price">
-                  <div class="prices">
-                    <div class="strikeout__price">
-                      <p>
-                        <span>122 000</span> руб.
-                      </p>
+                  <div class="flex">
+                    <div class="prices">
+                      <div class="strikeout__price">
+                        <p>
+                          <span>122 000</span> руб.
+                        </p>
+                      </div>
+                      <div class="current__price">
+                        <p>
+                          <span><strong>25 000</strong></span> руб.
+                        </p>
+                      </div>
                     </div>
-                    <div class="current__price">
-                      <p>
-                        <span><strong>25 000</strong></span> руб.
-                      </p>
+                    <div class="quantity">
+                      <form>
+                        <input type="number" name="quantity__number" value="1">
+                      </form>
                     </div>
-                  </div>
-                  <div class="quantity">
-                    <form>
-                      <input type="number" name="quantity__number" value="1">
-                    </form>
                   </div>
                   <div class="addToCart">
                     <a class="addCart__btn">
-                      <img src="img/icon/commerce-and-shopping.png" alt="Купить товар на дом">
+                      <img src="img/icon/commerce-and-shopping.png" alt="Купить товар">
                     </a>
                   </div>
                 </div>
@@ -407,27 +435,62 @@
               </div>
             </div>
           </div>
-          <!-- reviews and characteristics -->
+          <!-- reviews -->
           <div class="reviews">
             <h3>
               Отзывы
             </h3>
             <div class="reviews_content">
-              <ul>
-                <li>
-
-                </li>
-              </ul>
+              <div class="review__box">
+                <div class="review__box-item">
+                  <div class="review__box-header">
+                    <p class="review__name"><strong>Алёша</strong><span class="review__data">29 апреля 2020</span></p>
+                    <p class="like__count">Плагин лайков</p>
+                  </div>
+                  <p class="review__text">
+                    Туалетная вода The Golden Secret от Antonio Banderas - это секретный символ победителя, чья сила
+                    обаяния и соблазнительности не знает границ. Композиция предназначается смелому мужчине с открытым
+                    взглядом, предпочитающему джинсы и классическую рубашку с расстегнутым воротником. Его образ
+                    непосредственен и выразителен, в нем нет ничего лишнего и отвлекающего внимание. Этот человек четко
+                    знает, чего хочет, поэтому верен своим принципам и понятию чести. Он выбирает одну единственную
+                    женщину, достойную внимания, чтобы открыть перед ней все грани своей романтичной натуры.
+                  </p>
+                  <div class="review__footer">
+                    <p class="send-to">Ответить</p>
+                  </div>
+                </div>
+                <div class="review__box-item answer">
+                  <div class="review__box-header">
+                    <p class="review__name"><strong>Алёша</strong><span class="review__data">29 апреля 2020</span></p>
+                    <p class="like__count">Плагин лайков</p>
+                  </div>
+                  <p class="review__text">
+                    Туалетная вода The Golden Secret от Antonio Banderas - это секретный символ победителя, чья сила
+                    обаяния и соблазнительности не знает границ. Композиция предназначается смелому мужчине с открытым
+                    взглядом, предпочитающему джинсы и классическую рубашку
+                  </p>
+                </div>
+              </div>
               <form id="reviews">
-                <p>
-                  Оцените товар
-                </p>
-                <div class="stars">Звезды</div>
+                <legend>Оставить отзыв</legend>
+                <div class="raiting">
+                  <p>
+                    Оцените товар
+                  </p>
+                  <p>Сюда Плагин оценки</p>
+                </div>
                 <input type="text" name="name" placeholder="Ваше имя">
                 <input type="text" name="tel_id" placeholder="Номер телефона или e-mail">
                 <textarea name="text" id="text" placeholder="Текст вашего отзыва или коментария"></textarea>
-                <input type="file" name="foto" id="foto">
-                <input type="file" name="video" id="video">
+                <div class="flex">
+                  <input type="file" name="file_photo" id="file_photo" class="inputfile"
+                    data-multiple-caption="{count} files selected" multiple>
+                  <label class="file" for="file_photo">Прикрепить фото</label>
+                  <input type="file" name="file_video" id="file_video" class="inputfile"
+                    data-multiple-caption="{count} files selected" multiple>
+                  <label class="file" for="file_video">Ссылка на видео</label>
+                </div>
+                <input type="submit" name="submit" value="Опубликовать">
               </form>
             </div>
           </div>
@@ -484,6 +547,15 @@
               <ul>
                 <li>
                   <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
                 </li>
                 <li>
                   <a href="#"><i class="fa fa-odnoklassniki"></i></a>
