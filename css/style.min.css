@@ -1863,6 +1863,18 @@ ins {
   content: url(../img/icon/arrows_down.png);
   position: absolute;
   right: -20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#card-product .rigth .about__items .product__description-show:focus::after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#card-product .rigth .about__items .product__description-show.close::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 #card-product .rigth .about__items .product__price {

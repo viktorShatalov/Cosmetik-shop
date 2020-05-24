@@ -252,15 +252,19 @@ jQuery(document).ready(function () {
 
     // show text
 
-    jQuery(document).ready(function () {
-        jQuery('.product__description-show').click(function () {
-            jQuery('.product__description').toggleClass('hide');
-            if (jQuery('.product__description').hasClass('hide')) {
-                jQuery('.product__description-show').html('Читать полностью');
-            } else {
-                jQuery('.product__description-show').html('Скрыть');
-            }
-            return false;
-        });
+    jQuery('.product__description-show').click(function () {
+        jQuery('.product__description').toggleClass('hide');
+        if (jQuery('.product__description').hasClass('hide')) {
+            jQuery('.product__description-show').html('Читать полностью');
+        } else {
+            jQuery('.product__description-show').html('Скрыть');
+        }
+        return false;
+    });
+
+    // rotate ::after
+    jQuery('.product__description-show').on('click', function (e) {
+        e.preventDefault();
+        jQuery(this).toggleClass('close')
     });
 })
