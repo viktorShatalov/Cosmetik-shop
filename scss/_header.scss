@@ -37,14 +37,28 @@
     }
   }
   .cabinet {
+    position: relative;
     a {
       margin: 0 30px 0 25px;
       @include transition;
-      &::after {
-        content: url(../img/icon/arrows_accaunt.png);
-      }
       &:hover {
         @include hvrOpacity;
+      }
+    }
+    .cabinet__dropdown {
+      position: absolute;
+      top: 15px;
+      left: 0;
+      z-index: 1;
+      padding: 10px 15px 25px;
+      border: 1px solid $color_category-menu-border;
+      border-radius: 10px;
+      @include transition;
+      visibility: hidden;
+      opacity: 0;
+      &.active {
+        visibility: visible;
+        opacity: 1;
       }
     }
   }

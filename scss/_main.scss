@@ -162,12 +162,11 @@
       position: relative;
       .addCart__btn,
       .add_to_cart_button,
-      button {
+      .button {
         width: 70px;
         height: 70px;
         border-radius: 15px;
         background-color: $color_addToCart-btn;
-        cursor: pointer;
         position: absolute;
         top: -36px;
         left: -60px;
@@ -183,7 +182,10 @@
           width: 36px;
           height: 45px;
           filter: invert(1);
-          margin: 0 auto;
+          top: 50%;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }

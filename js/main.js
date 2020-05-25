@@ -267,4 +267,11 @@ jQuery(document).ready(function () {
         e.preventDefault();
         jQuery(this).toggleClass('close')
     });
+
+    // cabinet-dropdown
+
+    jQuery('.dropdown__btn').click(function (e) {
+        e.preventDefault();
+        jQuery('.cabinet__dropdown').toggleClass('active')
+    });
 })

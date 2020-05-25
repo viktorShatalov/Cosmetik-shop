@@ -84,13 +84,20 @@
             <div class="cabinet">
               <a href="#">
                 <img src="img/icon/social.png" alt="personal icon">
+                <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
               </a>
+              <div class="cabinet__dropdown">
+                <p>Вход</p>
+                <p>регистрация</p>
+              </div>
             </div>
             <div id="cart" class="cart">
-              <button class="cart__btn">
-                <img src="img/icon/commerce-and-shopping.png" alt="cart">
-                <span class="basket-btn__counter">29</span>
-              </button>
+              <a href="#cart-modal" data-uk-modal>
+                <button class="cart__btn">
+                  <img src="img/icon/commerce-and-shopping.png" alt="cart">
+                  <span class="basket-btn__counter">29</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -740,6 +747,53 @@
     <p>
       © FaceCare, 2020, Все права защищены
     </p>
+  </div>
+  <!-- cart-modal -->
+  <div id="cart-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body">
+        <h2>Товары в корзине</h2>
+        <div class="cart-item">
+          <div class="item__img">
+            <img src="img/product/25371.jpg" alt="cart-img">
+          </div>
+          <div class="item__name">
+            <p>The Golden Secret</p>
+          </div>
+          <div class="quantity">
+            <span>1</span>
+          </div>
+          <div class="prices">
+            <div class="strikeout__price">
+              <p>
+                <span>122 000</span> руб.
+              </p>
+            </div>
+            <div class="current__price">
+              <p>
+                <span><strong>25 000</strong></span> руб.
+              </p>
+            </div>
+          </div>
+          <div class="product-remove">
+            <a href="#">&times;</a>
+          </div>
+        </div>
+        <div class="order-total">
+          <div class="total-box">
+            <p><strong>Всего сумма:</strong></p>
+            <span>
+              <span><strong>25 000</strong></span> руб.
+            </span>
+          </div>
+        </div>
+        <div class="wc-proceed-to-checkout">
+          <a href="#" class="checkout-button">оформить заказ</a>
+        </div>
+        <a href="" class="return-shop">Продолжить покупки</a>
+      </div>
+    </div>
   </div>
 </body>
 
