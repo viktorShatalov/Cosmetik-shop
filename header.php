@@ -1,6 +1,3 @@
-<?php $curr_set_lan = get_locale();
-$woo_cart_page_id = get_option('woocommerce_cart_page_id');
-echo $curr_set_lan; ?>
 <!DOCTYPE html>
 <html>
 
@@ -27,7 +24,7 @@ echo $curr_set_lan; ?>
     <div id="autorithation-modal" class="uk-modal">
         <div class="uk-modal-dialog">
             <a class="uk-modal-close uk-close"></a>
-            <div class="modal-body">
+            <div class="modal-body__autorithation">
                 <h2>Вход в личный кабинет</h2>
             </div>
         </div>

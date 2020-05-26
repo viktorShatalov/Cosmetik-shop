@@ -168,7 +168,7 @@ body {
 
 main {
   background: white;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .conteiner {
@@ -628,6 +628,13 @@ ins {
 }
 
 @font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Montserrat-Regular";
   font-style: normal;
   font-weight: normal;
@@ -653,6 +660,13 @@ ins {
   font-style: normal;
   font-weight: normal;
   src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
 }
 
 #header .top__row {
@@ -801,7 +815,7 @@ ins {
   font-family: "Montserrat-LightItalic";
   width: 100%;
   border: 1px solid #dedede;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 12px 13px;
   margin-bottom: 15px;
   font-size: 0.75em;
@@ -1280,9 +1294,19 @@ ins {
   width: 25px;
   height: 25px;
   text-align: center;
-  padding: 2px 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social ul li a {
@@ -2233,7 +2257,7 @@ form#reviews textarea {
   font-family: "Montserrat-LightItalic";
   width: 100%;
   border: 1px solid #dedede;
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 12px 13px;
   margin-bottom: 15px;
   font-size: 0.75em;
@@ -2566,8 +2590,8 @@ form#reviews input[type="submit"]:hover {
   background-color: #404040;
 }
 
-#footer .social ul li {
-  padding: 1px 0;
+#footer .social span {
+  margin-top: 5px;
 }
 
 #footer a,
@@ -2627,7 +2651,6 @@ form#reviews input[type="submit"]:hover {
 #footer .footer__contacts a,
 #footer .footer__contacts p {
   font-size: 0.85em;
-  margin-bottom: 5px;
 }
 
 #footer .footer__contacts .operating__mode {
@@ -2669,12 +2692,7 @@ form#reviews input[type="submit"]:hover {
 }
 
 #cart-modal .uk-modal-dialog {
-  width: 100%;
   max-width: 550px;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: white;
-  color: black;
 }
 
 #cart-modal .modal-body h2 {
@@ -2712,7 +2730,7 @@ form#reviews input[type="submit"]:hover {
 
 #cart-modal .modal-body .cart-item .item__name {
   width: 180px;
-  color: #838383;
+  color: #828282;
 }
 
 #cart-modal .modal-body .cart-item .quantity {
@@ -2871,7 +2889,7 @@ form#reviews input[type="submit"]:hover {
 }
 
 #cart-modal .modal-body .return-shop {
-  color: #838383;
+  color: #828282;
   position: relative;
   display: block;
   width: 205px;
@@ -2890,6 +2908,199 @@ form#reviews input[type="submit"]:hover {
   opacity: 0.7;
 }
 
+#autorithation-modal .uk-modal-dialog {
+  max-width: 810px;
+}
+
+#autorithation-modal .modal-body_autorithation h2 {
+  width: 100%;
+  max-width: 455px;
+  margin: 0 auto 35px;
+}
+
+#autorithation-modal .modal-body_autorithation .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#autorithation-modal .modal-body_autorithation .content legend,
+#autorithation-modal .modal-body_autorithation .content h4 {
+  font-size: 1.125em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left,
+#autorithation-modal .modal-body_autorithation .content .right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input {
+  font-family: "Montserrat-LightItalic";
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-bottom: 15px;
+  font-size: 0.75em;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input:focus::placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 0;
+  background-color: #404040;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat-Medium";
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  max-width: 180px;
+  margin-top: 0;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left form input[type="submit"]:hover {
+  background-color: white;
+  color: #404040;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right {
+  border-color: #f8f8f8;
+  padding: 0 18px;
+  border-radius: 10px;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right p {
+  line-height: 1.5;
+  font-size: 0.78em;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a {
+  font-family: "Montserrat-LightItalic";
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-bottom: 15px;
+  font-size: 0.75em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  background-color: #404040;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat-Medium";
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin-top: 38px;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a:focus::placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#autorithation-modal .modal-body_autorithation .content .right a:hover {
+  background-color: white;
+  color: #404040;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left__form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left__form-footer p {
+  font-size: 0.78em;
+  max-width: 180px;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left__form-footer p a {
+  border-bottom: 1px solid #404040;
+}
+
+#autorithation-modal .modal-body_autorithation .content .left__form-footer p a:hover {
+  opacity: 0.7;
+}
+
+.uk-modal-dialog {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+}
+
 .uk-close {
   opacity: 1;
   position: relative;
@@ -2899,6 +3110,279 @@ form#reviews input[type="submit"]:hover {
 .uk-close:after {
   content: url(../img/icon/signs.png);
   margin: 0 0 0 -10px;
+}
+
+#contacts .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+#contacts .content .left__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+  padding: 15px 20px 13px 30px;
+  background-color: #f8f8f8;
+  height: 100%;
+}
+
+#contacts .content .left__content ul li {
+  position: relative;
+  border-radius: 15px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#contacts .content .left__content ul li:hover {
+  background-color: white;
+}
+
+#contacts .content .left__content ul li a {
+  display: block;
+  font-size: 0.9em;
+  font-family: "Montserrat-Medium";
+  color: #404040;
+}
+
+#contacts .content .left__content ul li::after {
+  content: url(../img/icon/arrows_down.png);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+
+#contacts .content .right__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 74%;
+          flex: 0 1 74%;
+}
+
+#contacts .content .right__content h2 {
+  text-align: left;
+  margin-top: 5px;
+}
+
+#contacts .content .right__content .top__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#contacts .content .right__content .top__row form {
+  background-color: #f8f8f8;
+  max-width: 240px;
+  padding: 20px 13px;
+}
+
+#contacts .content .right__content .top__row form legend {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#contacts .content .right__content .top__row form input,
+#contacts .content .right__content .top__row form textarea {
+  font-family: "Montserrat-LightItalic";
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 12px 13px;
+  margin-bottom: 15px;
+  font-size: 0.75em;
+  padding-left: 30px;
+  font-family: "Montserrat-Light";
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+#contacts .content .right__content .top__row form input:focus::-webkit-input-placeholder,
+#contacts .content .right__content .top__row form textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contacts .content .right__content .top__row form input:focus:-ms-input-placeholder,
+#contacts .content .right__content .top__row form textarea:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contacts .content .right__content .top__row form input:focus::-ms-input-placeholder,
+#contacts .content .right__content .top__row form textarea:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contacts .content .right__content .top__row form input:focus::placeholder,
+#contacts .content .right__content .top__row form textarea:focus::placeholder {
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contacts .content .right__content .top__row form input::-webkit-input-placeholder,
+#contacts .content .right__content .top__row form textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+#contacts .content .right__content .top__row form input:-ms-input-placeholder,
+#contacts .content .right__content .top__row form textarea:-ms-input-placeholder {
+  color: black;
+}
+
+#contacts .content .right__content .top__row form input::-ms-input-placeholder,
+#contacts .content .right__content .top__row form textarea::-ms-input-placeholder {
+  color: black;
+}
+
+#contacts .content .right__content .top__row form input::placeholder,
+#contacts .content .right__content .top__row form textarea::placeholder {
+  color: black;
+}
+
+#contacts .content .right__content .top__row form input[type="text"] {
+  background-image: url(../img/icon/avatar__contact.png);
+  background-position: 14px 12px;
+}
+
+#contacts .content .right__content .top__row form input[type="email"] {
+  background-image: url(../img/icon/email_icon.png);
+  background-position: 8px 12px;
+}
+
+#contacts .content .right__content .top__row form textarea {
+  background-image: url(../img/icon/messege_textarea.png);
+  background-position: 12px 13px;
+}
+
+#contacts .content .right__content .top__row form textarea {
+  resize: none;
+  height: 110px;
+  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+
+#contacts .content .right__content .top__row form input[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 0;
+  background-color: #404040;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat-Medium";
+  font-size: 1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 12px 13px;
+}
+
+#contacts .content .right__content .top__row form input[type="submit"]:hover {
+  background-color: white;
+  color: #404040;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item {
+  position: relative;
+  padding: 0 25px;
+  margin-bottom: 20px;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item p {
+  font-size: 0.89em;
+  line-height: 1.4;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(1) {
+  width: 235px;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(1):before {
+  content: url(../img/icon/maps-and-location.png);
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2) {
+  width: 205px;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2):before {
+  content: url(../img/icon/phone-call.png);
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2) a {
+  margin-bottom: 5px;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2) a:last-child {
+  position: relative;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2) a:last-child::after {
+  content: url(../img/icon/arrows_down.png);
+  position: absolute;
+  right: -15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(2) a:hover {
+  opacity: 0.7;
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(3):before {
+  content: url(../img/icon/email_icon.png);
+}
+
+#contacts .content .right__content .bottom__row .contacts__items .item:nth-child(3) a:hover {
+  opacity: 0.7;
 }
 
 .price {
@@ -3661,6 +4145,20 @@ form#reviews input[type="submit"]:hover {
 @media only screen and (min-width: 320px) and (max-width: 880px) {
   body {
     font-size: 14px;
+  }
+  .map {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 20px 0;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
   #cart .conteiner,
   #ordering .conteiner {

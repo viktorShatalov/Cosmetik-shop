@@ -1,19 +1,15 @@
 $color_modal-bg: rgb(255, 255, 255);
 $color_modal-text: rgb(0, 0, 0);
-$color_modal-product-name: rgb(131, 131, 131);
+$color_modal-product-name: rgb(130, 130, 130);
 $color_modal-border-item: rgb(64, 64, 64);
 $color_modal-order_total-bg: rgb(248, 248, 248);
 $color_modal-remove: rgb(206, 27, 27);
 $color_modal-close-btn: rgb(0, 0, 0);
+$color_modal-form-item-bg: rgb(248, 248, 248);
 
 #cart-modal {
   .uk-modal-dialog {
-    width: 100%;
     max-width: 550px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: $color_modal-bg;
-    color: $color_modal-text;
   }
   .modal-body {
     h2 {
@@ -183,6 +179,85 @@ $color_modal-close-btn: rgb(0, 0, 0);
   }
 }
 
+#autorithation-modal {
+  .uk-modal-dialog {
+    max-width: 810px;
+  }
+  .modal-body_autorithation {
+    h2 {
+      width: 100%;
+      max-width: 455px;
+      margin: 0 auto 35px;
+    }
+    .content {
+      @include flex;
+      justify-content: space-between;
+      legend,
+      h4 {
+        font-size: 1.125em;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .left,
+      .right {
+        flex: 0 1 48%;
+      }
+      .left {
+        form {
+          input {
+            @include input;
+          }
+          input[type="submit"] {
+            @include input-submit;
+            max-width: 180px;
+            margin-top: 0;
+          }
+        }
+      }
+      .right {
+        border-color: $color_modal-form-item-bg;
+        padding: 0 18px;
+        border-radius: 10px;
+        p {
+          line-height: 1.5;
+          font-size: 0.78em;
+        }
+        a {
+          @include input;
+          @include input-submit;
+          display: block;
+          margin-top: 38px;
+        }
+      }
+      .left__form-footer {
+        @include flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 0.78em;
+          max-width: 180px;
+          a {
+            border-bottom: 1px solid $color_modal-border-item;
+            &:hover {
+              @include hvrOpacity;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.uk-modal-dialog {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $color_modal-bg;
+  color: $color_modal-text;
+}
+
 .uk-close {
   opacity: 1;
   position: relative;
@@ -192,4 +267,3 @@ $color_modal-close-btn: rgb(0, 0, 0);
     margin: 0 0 0 -10px;
   }
 }
-

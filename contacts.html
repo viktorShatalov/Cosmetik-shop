@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Магазин "Корзинка"</title>
+  <title>Косметика категории</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/uikit.min.css">
@@ -13,354 +13,375 @@
   <script src="js/slick.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
 <body>
   <!-- header -->
   <header id="header">
+    <div class="mobile__content">
+      <a class="category__link" href="http://korzinka11.ru/shop/">Каталог</a>
+      <div class="mobile__content-description">
+        <div class="contacts__phone">
+          <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
+          <p>
+            с 9:00 до 22:00<br>
+            ежедневно
+          </p>
+        </div>
+      </div>
+      <div class="close-menu">
+        <p>Закрыть меню</p>
+      </div>
+    </div>
     <div class="top__row">
       <div class="conteiner m-auto">
-        <div class="logo">
-          <a href="/">
-            <img src="img/logo/logo.png" alt="Логотип Магазина 'Карзинка'"></a>
+        <div class="social">
+          <p>Присоединяйтесь к нам: </p>
+          <span>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </span>
         </div>
-        <nav class="menu__items">
+        <div class="change__lang">
+          <p> Выберите язык:</p>
           <ul>
-            <li><a href="/">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Оплата</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a class="active" href="#">Рус.</a></li>
+            <li><a href="#">Укр.</a></li>
           </ul>
-        </nav>
-        <div class="cabinet">
-          <a href="#">
-            <img src="img/icon/noun_personal.png" alt="personal icon">
-            <span>Личный кабинет</span>
-          </a>
         </div>
       </div>
     </div>
     <div class="bottom__row">
       <div class="conteiner m-auto">
-        <div class="catalog__menu">
-          <span class="burger__catalog container-icon">
-            <span></span>
-          </span>
-          <a class="category__link " href="#">Каталог товаров</a>
-          <div class="category">
-            <div class="category__box-menu">
-              <ul class="category__menu-items">
-                <li data-filter=".item1"><a href="#">Категория простая</a></li>
-                <li data-filter=".item2"><a href="#">Выделенная категория</a></li>
-                <li data-filter=".item3"><a href="#">Категория с длинным названием в две строки</a></li>
-                <li data-filter=".item4"><a href="#">Категория простая</a></li>
-                <li data-filter=".item5"><a href="#">Категория простая</a></li>
-                <li data-filter=".item6"><a href="#">Категория простая</a></li>
-                <li data-filter=".item7"><a href="#">Категория простая</a></li>
-                <li data-filter=".item8"><a href="#">Категория простая</a></li>
-                <li data-filter=".item9"><a href="#">Категория простая</a></li>
-                <li data-filter=".item10"><a href="#">Категория простая</a></li>
-                <li data-filter=".item11"><a href="#">Категория простая</a></li>
-              </ul>
-              <div class="box__sub-menu">
-                <div class="category__sub-menu item1">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item2">
-                  <h3>
-                    Простая категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item3">
-                  <h3>
-                    Выделенная категория с длинным текстом
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item4">
-                  <h3>
-                    Еще одна категория категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item5">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item6">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item7">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item8">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item9">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item10">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
-                <div class="category__sub-menu item11">
-                  <h3>
-                    Выделенная категория
-                  </h3>
-                  <ul>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                    <li><a href="#">Подкатегория с длинным названием</a></li>
-                    <li><a href="#">Подкатегория</a></li>
-                    <li><a href="#">Подкатегория с очень длинным названием</a></li>
-                  </ul>
-                </div>
+        <div class="bottom__row-top">
+          <div class="logo">
+            <a href="/">
+              <img src="img/logo/logo.png" alt="FaceCare">
+            </a>
+            <div class="burger"><span></span></div>
+          </div>
+          <div class="top__box">
+            <div class="contacts__phone">
+              <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
+            </div>
+            <div class="cabinet">
+              <a href="#autorithation-modal" data-uk-modal><img src="img/icon/social.png" alt="personal icon"></a>
+              <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
+              <div class="cabinet__dropdown">
+                <p>Существующий пользователь</p>
+                <form>
+                  <input type="text" placeholder="Телефон или e-mail">
+                  <input type="password" placeholder="Пароль">
+                  <input type="submit" value="Войти">
+                  <a href="#">Восcтановить пароль</a>
+                  <a href="#">Зарегистрироваться</a>
+                </form>
               </div>
             </div>
-            <div class="category__description">
-              <p>
-                Если вы не нашли то, что искали, можете обратиться по телефону, мы уверены в том, что сможем вам помочь
-              </p>
+            <div id="cart" class="cart">
+              <a href="#cart-modal" data-uk-modal>
+                <button class="cart__btn">
+                  <img src="img/icon/commerce-and-shopping.png" alt="cart">
+                  <span class="basket-btn__counter">29</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
-        <div class="search">
-          <input type="search" name="search" id="input__search" placeholder="Найти товар">
-          <button class="search__btn">
-            <img src="img/icon/search_icon.png" alt="img btn">
-          </button>
-        </div>
-        <div>
-          <p>
-            У нас бесплатная доставка!
-          </p>
-        </div>
-        <div class="contacts__phone">
-          <a href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
-        </div>
-        <div id="cart" class="cart">
-          <button class="cart__btn">
-            <img src="img/icon/noun_cart.png" alt="cart">
-          </button>
-          <a href="#">
-            Корзина
-          </a>
+        <div class="bottom__row-down">
+          <div class="catalog__menu">
+            <a class="category__link" href="#">Каталог товаров</a>
+            <div class="category">
+              <div class="category__box-menu">
+                <ul class="category__menu-items">
+                  <li data-filter=".item1">Парфумерія</li>
+                  <li data-filter=".item2">Макіяж</li>
+                  <li data-filter=".item3">Аксессуары</li>
+                  <li data-filter=".item4">Подарункові карти</li>
+                  <li data-filter=".item5">Дезодоранти</li>
+                  <li data-filter=".item6">Для волосся</li>
+                  <li data-filter=".item7">Живлення і відновлення</li>
+                  <li data-filter=".item8">Гелі для душу</li>
+                  <li data-filter=".item9">Креми і лосьони</li>
+                  <li data-filter=".item10">Набори</li>
+                </ul>
+                <div class="box__sub-menu">
+                  <div class="category__sub-menu item1">
+                    <ul>
+                      <li><a href="#">Парфумерія</a>
+                        <ul>
+                          <li><a href="#">Парфумерія</a></li>
+                          <li><a href="#">Макіяж</a></li>
+                          <li><a href="#">Аксессуары</a></li>
+                          <li><a href="#">Парфумерія</a></li>
+                          <li><a href="#">Макіяж</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Макіяж</a>
+                      </li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item2">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item3">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item4">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item5">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item6">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item7">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item8">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item9">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                  <div class="category__sub-menu item10">
+                    <ul>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                      <li><a href="#">Парфумерія</a></li>
+                      <li><a href="#">Макіяж</a></li>
+                      <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="menu__items">
+            <ul>
+              <li><a href="/">Бренды</a></li>
+              <li><a href="#">Полезные статьи</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <button class="search__btn">
+              <img src="img/icon/interface.png" alt="search__btn">
+            </button>
+            <input type="search" name="search" id="input__search" placeholder="Что вы ищите?">
+          </div>
         </div>
       </div>
     </div>
   </header>
   <!-- main -->
   <main>
-    <section id="contakts">
+    <section id="contacts">
       <div class="conteiner m-auto">
+        <!-- breadcumps -->
+        <div id="breadcumbs">
+          <ul class="conteiner">
+            <li>
+              <a href="#">Facecare</a>
+            </li>
+            <li>
+              <a href="#">Каталог товаров</a>
+            </li>
+            <li>
+              <a href="#">next page</a>
+            </li>
+          </ul>
+        </div>
         <div class="content">
-          <h1>Контакты</h1>
-          <div class="contacts__adress">
-            <p>Адрес: <span>Воркута, ул. Дончука, 11</span></p>
+          <div class="left__content">
+            <ul>
+              <li><a href="#">Про компанию</a></li>
+              <li><a href="#">Магазины FaceCare</a></li>
+              <li><a href="#">Интернет-магазин</a></li>
+              <li><a href="#">Карьера и вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
           </div>
-          <div class="contacts__phone">
-            <p>Телефон: <span><a href="tel:200-01">200-01</a></span></p>
-
-          </div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1526.7276239527869!2d64.04584791597433!3d67.50170583794882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x448774a7864bad85%3A0xa01244c2244d1322!2z0YPQuy4g0JTQvtC90YfRg9C60LAsIDExLCDQktC-0YDQutGD0YLQsCwg0KDQtdGB0L8uINCa0L7QvNC4LCDQoNC-0YHRgdC40Y8sIDE2OTkwMA!5e0!3m2!1sru!2sua!4v1589312039088!5m2!1sru!2sua"
-              width="1200" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0">
-            </iframe>
+          <div class="right__content">
+            <h2>Контакты</h2>
+            <div class="top__row">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.7336158112876!2d30.495579315154583!3d50.44606229556312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef4fb2ededf%3A0x233cacb3cac058c6!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDE0NSwgNSDRjdGC0LDQtiwg0L7RhC4xMDk4LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1590511201213!5m2!1sru!2sua"
+                  width="620" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0">
+                </iframe>
+              </div>
+              <form>
+                <legend>Напишите нам:</legend>
+                <input type="text" placeholder="Ваше имя">
+                <input type="email" placeholder="Ваша почта">
+                <textarea name="textarea" id="textarea" placeholder="Ваше сообщение"></textarea>
+                <input type="submit" value="отправить">
+              </form>
+            </div>
+            <div class="bottom__row">
+              <div class="contacts__items">
+                <div class="item">
+                  <h4>Адрес:</h4>
+                  <p>00002, Украина, г.<br> Киев, Бульвар Шевченко 145, корп12, 5 этаж, оф.1098</p>
+                </div>
+                <div class="item">
+                  <h4>Телефон:</h4>
+                  <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
+                  <a href="tel:(067) 146 14 15">(067) 146 14 15</a>
+                  <a href="te:(044) 258 96 74">(044) 258 96 74</a>
+                  <a href="#call-order" data-uk-modal>Заказать звонок</a>
+                </div>
+                <div class="item">
+                  <h4>Почта:</h4>
+                  <a href="mailto:info@facecare.com.ua">info@facecare.com.ua</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -369,45 +390,168 @@
   <!-- footer -->
   <footer id="footer">
     <div class="conteiner m-auto">
-      <div class="footer__menu">
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo/logo-footer.png" alt="FaceCare">
+        </a>
+      </div>
+      <div class="footer__content">
         <nav class="footer__nav">
           <ul>
-            <li><a class="active" href="/">Главная</a></li>
-            <li><a href="#">О нас</a></li>
+            <h4>Про нас</h4>
+            <li><a aria-current="page" href="/">Про компанию</a></li>
+            <li><a href="#">Интернет-магазин</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <ul>
+            <h4>Помощь</h4>
+            <li><a aria-current="page" href="/">Помощь</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Оплата</a></li>
-            <li><a href="#">Акции</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Условия продажи</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+          </ul>
+          <ul>
+            <h4>Для вас</h4>
+            <li><a aria-current="page" href="/">Для вас</a></li>
+            <li><a href="#">Дисконтная программа</a></li>
+            <li><a href="#">Подарочные карты</a></li>
+            <li><a href="#">Нишевая парфюмерия</a></li>
+            <li><a href="#">#КупуйОРИГІНАЛ</a></li>
+            <li><a href="#">Новости</a></li>
           </ul>
         </nav>
-      </div>
-      <div class="footer__contacts">
-        <div class="footer__subscribe">
-          <p>Вы можете подписаться на рассылку выгодных предложений от нашего магазина:</p>
-          <input type="email" name="subscribe__email" id="subscribe__email" placeholder="Введите ваш e-mail">
-          <input type="button" value="Отправить">
-        </div>
-        <div class="footer__about">
+        <div class="footer__contacts">
           <div class="phone">
-            <p>Телефон:</p>
-            <a href="tel:+7 (000) 000-00-00">+7 (000) 000-00-00</a>
-            <br>
-            <a href="tel:8 000 111-11-11">8 000 111-11-11</a>
+            <h4>Гарячая линия:</h4>
+            <a href="tel:0 800 50 888 0">0 800 50 888 0</a>
           </div>
           <div class="operating__mode">
-            <p>Режим работы:</p>
-            <p>с 9:00 до 22:00<br>
-              ежедневно</p>
+            <p>Ежедневно с 9:00 до 21:00</p>
+          </div>
+          <div class="social">
+            <p>Присоединяйтесь к нам: </p>
+            <span>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-vk"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </span>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer__signature conteiner m-auto">
-      <p>
-        Copyright © 2020 Корзинка
-      </p>
-    </div>
   </footer>
+  <div class="footer__signature conteiner m-auto">
+    <p>
+      © FaceCare, 2020, Все права защищены
+    </p>
+  </div>
+
+  <!-- cart-modal -->
+  <div id="cart-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body">
+        <h2>Товары в корзине</h2>
+        <div class="cart-item">
+          <div class="item__img">
+            <img src="img/product/25371.jpg" alt="cart-img">
+          </div>
+          <div class="item__name">
+            <p>The Golden Secret</p>
+          </div>
+          <div class="quantity">
+            <span>1</span>
+          </div>
+          <div class="prices">
+            <div class="strikeout__price">
+              <p>
+                <span>122 000</span> руб.
+              </p>
+            </div>
+            <div class="current__price">
+              <p>
+                <span><strong>25 000</strong></span> руб.
+              </p>
+            </div>
+          </div>
+          <div class="product-remove">
+            <a href="#">&times;</a>
+          </div>
+        </div>
+        <div class="order-total">
+          <div class="total-box">
+            <p><strong>Всего сумма:</strong></p>
+            <span>
+              <span><strong>25 000</strong></span> руб.
+            </span>
+          </div>
+        </div>
+        <div class="wc-proceed-to-checkout">
+          <a href="#" class="checkout-button">оформить заказ</a>
+        </div>
+        <a href="" class="return-shop uk-modal-close">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <!-- autorithation-modal -->
+  <div id="autorithation-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body_autorithation">
+        <h2>Вход в личный кабинет</h2>
+        <div class="content">
+          <div class="left">
+            <form>
+              <legend>Существующий пользователь</legend>
+              <input type="text" placeholder="Номер телефона или e-mail">
+              <input type="password" placeholder="Пароль">
+              <div class="left__form-footer">
+                <input type="submit" value="Войти">
+                <p>Если вы забыли пароль то перейдите по ссылке
+                  <a href="#">восcтановить пароль</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="right">
+            <h4>Зарегистрироваться на сайте</h4>
+            <p>
+              Создание аккаунта имеет ряд преимуществ: быстрые покупки, возможность сохранить более одного адреса
+              доставки, отслеживание заказов и многое другое.
+            </p>
+            <a href="#">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- call-order -->
+  <div id="call-order" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body_autorithation">
+        Заказать звонок
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

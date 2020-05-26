@@ -1,0 +1,158 @@
+$color_elem-bg: rgb(248, 248, 248);
+$color_text: rgb(64, 64, 64);
+
+#contacts {
+  .content {
+    @include flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    .left__content {
+      flex: 0 1 24%;
+      padding: 15px 20px 13px 30px;
+      background-color: $color_elem-bg;
+      height: 100%;
+      ul {
+        li {
+          position: relative;
+          border-radius: 15px;
+          padding: 5px 10px;
+          @include transition;
+          cursor: pointer;
+          &:hover {
+            background-color: $color_white;
+          }
+          a {
+            display: block;
+            font-size: 0.9em;
+            font-family: "Montserrat-Medium";
+            color: $color_text;
+          }
+          &::after {
+            content: url(../img/icon/arrows_down.png);
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 4px;
+            right: 6px;
+          }
+        }
+      }
+    }
+    .right__content {
+      flex: 0 1 74%;
+      h2 {
+        text-align: left;
+        margin-top: 5px;
+      }
+      .top__row {
+        @include flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        form {
+          background-color: $color_elem-bg;
+          max-width: 240px;
+          padding: 20px 13px;
+          legend {
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          input,
+          textarea {
+            @include input;
+            padding-left: 30px;
+            font-family: "Montserrat-Light";
+            position: relative;
+            &::placeholder {
+              color: $color_black;
+            }
+            background-repeat: no-repeat;
+          }
+          input[type="text"] {
+            background-image: url(../img/icon/avatar__contact.png);
+            background-position: 14px 12px;
+          }
+          input[type="email"] {
+            background-image: url(../img/icon/email_icon.png);
+            background-position: 8px 12px;
+          }
+          textarea {
+            background-image: url(../img/icon/messege_textarea.png);
+            background-position: 12px 13px;
+          }
+          textarea {
+            @include textarea;
+            margin-bottom: 0;
+          }
+          input[type="submit"] {
+            @include input-submit;
+            padding: 12px 13px;
+          }
+        }
+      }
+      .bottom__row {
+        .contacts__items {
+          @include flex;
+          justify-content: space-between;
+          .item {
+            position: relative;
+            padding: 0 25px;
+            margin-bottom: 20px;
+            &:before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+            h4 {
+              font-size: 1em;
+              margin-bottom: 10px;
+            }
+            p {
+              font-size: 0.89em;
+              line-height: 1.4;
+            }
+            &:nth-child(1) {
+              width: 235px;
+              &:before {
+                content: url(../img/icon/maps-and-location.png);
+              }
+            }
+            &:nth-child(2) {
+              width: 205px;
+              &:before {
+                content: url(../img/icon/phone-call.png);
+              }
+              a {
+                margin-bottom: 5px;
+                display: block;
+                @include transition;
+                &:last-child {
+                  position: relative;
+                  &::after {
+                    content: url(../img/icon/arrows_down.png);
+                    position: absolute;
+                    right: -15px;
+                    transform: rotate(-90deg);
+                  }
+                }
+                &:hover {
+                  @include hvrOpacity;
+                }
+              }
+            }
+            &:nth-child(3) {
+              &:before {
+                content: url(../img/icon/email_icon.png);
+              }
+              a {
+                &:hover {
+                  @include hvrOpacity;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

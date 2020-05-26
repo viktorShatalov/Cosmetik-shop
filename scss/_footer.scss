@@ -2,10 +2,8 @@
   padding: 25px 0 30px;
   background-color: $color_footer-bg;
   .social {
-    ul {
-      li {
-        padding: 1px 0;
-      }
+    span {
+      margin-top: 5px;
     }
   }
   a,
@@ -53,7 +51,6 @@
     a,
     p {
       font-size: 0.85em;
-      margin-bottom: 5px;
     }
     .operating__mode {
       margin-bottom: 25px;

@@ -379,8 +379,10 @@
       width: 25px;
       height: 25px;
       text-align: center;
-      padding: 2px 0;
       @include transition;
+      @include flex;
+      align-items: center;
+      justify-content: center;
       a {
         color: $color_bg_header-top__bg !important;
       }
