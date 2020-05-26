@@ -8,6 +8,7 @@
       @include flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: nowrap;
     }
     p {
       color: $color_bg_header-top__color;
@@ -36,7 +37,8 @@
       font-size: 1.555em;
     }
   }
-  .cabinet {
+  .cabinet,
+  .mobile__cabinet {
     position: relative;
     margin: 0 15px 0 25px;
     a {
@@ -317,7 +319,8 @@
     }
   }
   .search,
-  #search {
+  #search,
+  .mobile__search {
     position: relative;
     input[name="search"],
     input[name="s"] {
@@ -391,4 +394,7 @@
       }
     }
   }
+}
+.mobile__content {
+  display: none;
 }

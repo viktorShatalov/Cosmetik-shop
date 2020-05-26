@@ -5,17 +5,6 @@
     padding: 25px 20px;
     max-width: 1225px;
   }
-  .back__to {
-    a {
-      color: $color_cart_text;
-      margin: 0 0 0 15px;
-      font-family: "Gilroy-Regular";
-      &::before {
-        content: "←";
-        margin: 0 3px 0 -15px;
-      }
-    }
-  }
   .head {
     @include flex;
     justify-content: space-between;
@@ -32,55 +21,6 @@
       font-family: "Gilroy-Regular";
       font-weight: bold;
       margin: 0 15px 15px 0;
-    }
-  }
-  .step__name-dreadcumbs {
-    background-color: $color_step_bg;
-    margin: 30px -20px 0;
-    padding: 0 85px;
-    ul {
-      @include flex;
-      li {
-        padding: 28px 0;
-        a {
-          font-size: 1.125em;
-          color: $color_cart_text;
-          font-weight: bold;
-          padding: 0 75px 0 20px;
-          display: inline-block;
-          position: relative;
-          &::before {
-            content: "1";
-            background-color: $color_white;
-            text-align: center;
-            width: 25px;
-            height: 25px;
-            color: $color_cart_text;
-            position: absolute;
-            left: -20px;
-            border-radius: 50%;
-            font-size: 1em;
-          }
-          &::after {
-            content: ">";
-            margin: 0 20px;
-            position: absolute;
-            color: $color_cart_text;
-          }
-        }
-        &:nth-child(2) a {
-          &:before {
-            content: "2";
-          }
-        }
-        &:nth-child(3) a {
-          color: $color_header_link;
-          &:before {
-            content: "3";
-            color: $color_header_link;
-          }
-        }
-      }
     }
   }
   .cart__content {
@@ -102,7 +42,6 @@
       .box {
         flex-direction: column;
         width: 100%;
-        max-width: 30%;
         &:first-child {
           width: 100%;
           max-width: 920px;

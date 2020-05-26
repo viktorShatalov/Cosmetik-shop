@@ -6,7 +6,7 @@
 @media only screen and (min-width: 320px) and (max-width: 880px) {
   body {
     // overflow-x: hidden;
-    font-size: 14px;
+    font-size: 16px;
   }
   .map {
     overflow: hidden;
@@ -22,28 +22,11 @@
       position: absolute;
     }
   }
-  #cart,
-  #ordering {
-    .conteiner {
-      margin: 0 10px;
-      padding: 25px 10px;
-      .step__name-dreadcumbs {
-        display: none;
-      }
-    }
-  }
   .conteiner {
-    padding: 0 10px;
-  }
-  #first__slider {
-    padding: 0;
+    padding: 0 15px;
   }
   h2 {
-    padding: 40px 0;
-    &::after,
-    &::before {
-      content: none;
-    }
+    text-align: center;
   }
   #header .bottom__row #cart,
   .menu__items,
@@ -51,7 +34,8 @@
   #header .bottom__row .catalog__menu,
   #header .bottom__row .search,
   #header .bottom__row .free_shipping,
-  #header .bottom__row .contacts__phone {
+  #header .bottom__row .contacts__phone,
+  .mobile__hide {
     display: none;
   }
   #header .bottom__row #cart {
@@ -94,39 +78,74 @@
   }
   .logo {
     margin: 15px auto;
-    width: 190px;
-    a {
-      z-index: 5;
+  }
+
+  // mobile__content
+  #header {
+    .mobile__content {
+      display: block;
+      .row {
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .row__link {
+        .top__box {
+          display: flex;
+          align-items: center;
+          .mobile__cabinet {
+            margin: 0;
+            .cabinet__dropdown {
+              top: 30px;
+              right: 10px;
+              &:after,
+              &:before {
+                top: -15px;
+                left: 50%;
+              }
+            }
+          }
+        }
+        .contacts__phone {
+          margin: 0 15px;
+        }
+      }
     }
+  }
+  .mobile__content.active {
+    display: block;
   }
 
   //  Burger Menu *******************************************************************************************
   .burger {
     display: block;
     width: 40px;
-    height: 22px;
+    height: 23px;
     position: relative;
-    right: -15%;
-    top: 3px;
+    right: 0;
+    top: 0;
     z-index: 5;
     cursor: pointer;
   }
   .burger span {
     position: absolute;
-    background-color: $color_bg_header-bottom__row;
+    background-color: $color_burger-menu;
+    border-radius: 10px;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 5px;
     top: 9px;
     @include transition;
   }
   .burger::before,
   .burger::after {
     content: "";
-    background-color: $color_bg_header-bottom__row;
+    background-color: $color_burger-menu;
+    border-radius: 10px;
     position: absolute;
     width: 100%;
-    height: 4px;
+    height: 5px;
     left: 0;
     @include transition;
   }

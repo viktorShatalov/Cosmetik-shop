@@ -343,43 +343,6 @@ ins {
   }
 }
 
-// mobile__content
-.mobile__content {
-  display: none;
-  .category__link {
-    text-align: center;
-    display: block;
-    padding: 7px 0;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  .mobile__content-description {
-    background-color: $color_bg_header-bottom__row;
-    padding: 30% 0 0;
-    color: $color_white;
-    line-height: 1.4;
-    height: 100vh;
-    font-size: 1rem;
-    a {
-      color: $color_white;
-    }
-  }
-  .close-menu {
-    background-color: $color_white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    p {
-      color: $color_header_link;
-      font-weight: bold;
-      padding: 15px 0;
-    }
-  }
-}
-.mobile__content.active {
-  display: block;
-}
-
 // rotate ::after
 .product__description-show {
   color: $color_card__product-text;

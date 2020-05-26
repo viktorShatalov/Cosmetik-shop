@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Косметика карточка</title>
+  <title>Косметика категории</title>
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/uikit.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/jquery/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
@@ -42,19 +42,22 @@
           <span>
             <ul>
               <li>
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
               </li>
             </ul>
           </span>
@@ -82,15 +85,26 @@
               <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
             </div>
             <div class="cabinet">
-              <a href="#">
-                <img src="img/icon/social.png" alt="personal icon">
-              </a>
+              <a href="#autorithation-modal" data-uk-modal><img src="img/icon/social.png" alt="personal icon"></a>
+              <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
+              <div class="cabinet__dropdown">
+                <p>Существующий пользователь</p>
+                <form>
+                  <input type="text" placeholder="Телефон или e-mail">
+                  <input type="password" placeholder="Пароль">
+                  <input type="submit" value="Войти">
+                  <a href="#">Восcтановить пароль</a>
+                  <a href="#">Зарегистрироваться</a>
+                </form>
+              </div>
             </div>
             <div id="cart" class="cart">
-              <button class="cart__btn">
-                <img src="img/icon/commerce-and-shopping.png" alt="cart">
-                <span class="basket-btn__counter">29</span>
-              </button>
+              <a href="#cart-modal" data-uk-modal>
+                <button class="cart__btn">
+                  <img src="img/icon/commerce-and-shopping.png" alt="cart">
+                  <span class="basket-btn__counter">29</span>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -546,19 +560,22 @@
             <span>
               <ul>
                 <li>
-                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-odnoklassniki"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-vk"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
                 </li>
               </ul>
             </span>
@@ -571,6 +588,94 @@
     <p>
       © FaceCare, 2020, Все права защищены
     </p>
+  </div>
+
+  <!-- cart-modal -->
+  <div id="cart-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body">
+        <h2>Товары в корзине</h2>
+        <div class="cart-item">
+          <div class="item__img">
+            <img src="img/product/25371.jpg" alt="cart-img">
+          </div>
+          <div class="item__name">
+            <p>The Golden Secret</p>
+          </div>
+          <div class="quantity">
+            <span>1</span>
+          </div>
+          <div class="prices">
+            <div class="strikeout__price">
+              <p>
+                <span>122 000</span> руб.
+              </p>
+            </div>
+            <div class="current__price">
+              <p>
+                <span><strong>25 000</strong></span> руб.
+              </p>
+            </div>
+          </div>
+          <div class="product-remove">
+            <a href="#">&times;</a>
+          </div>
+        </div>
+        <div class="order-total">
+          <div class="total-box">
+            <p><strong>Всего сумма:</strong></p>
+            <span>
+              <span><strong>25 000</strong></span> руб.
+            </span>
+          </div>
+        </div>
+        <div class="wc-proceed-to-checkout">
+          <a href="#" class="checkout-button">оформить заказ</a>
+        </div>
+        <a href="" class="return-shop uk-modal-close">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <!-- autorithation-modal -->
+  <div id="autorithation-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body_autorithation">
+        <h2>Вход в личный кабинет</h2>
+        <div class="content">
+          <div class="left">
+            <form>
+              <legend>Существующий пользователь</legend>
+              <input type="text" placeholder="Номер телефона или e-mail">
+              <input type="password" placeholder="Пароль">
+              <div class="left__form-footer">
+                <input type="submit" value="Войти">
+                <p>Если вы забыли пароль то перейдите по ссылке
+                  <a href="#">восcтановить пароль</a></p>
+              </div>
+            </form>
+          </div>
+          <div class="right">
+            <h4>Зарегистрироваться на сайте</h4>
+            <p>
+              Создание аккаунта имеет ряд преимуществ: быстрые покупки, возможность сохранить более одного адреса
+              доставки, отслеживание заказов и многое другое.
+            </p>
+            <a href="#">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- call-order -->
+  <div id="call-order" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body_autorithation">
+        Заказать звонок
+      </div>
+    </div>
   </div>
 </body>
 
