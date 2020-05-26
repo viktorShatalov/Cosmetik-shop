@@ -8,12 +8,13 @@
   <link rel="shortcut icon" href="" type="image/x-icon">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/uikit.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/jquery/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 
@@ -42,19 +43,22 @@
           <span>
             <ul>
               <li>
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
               </li>
             </ul>
           </span>
@@ -82,13 +86,17 @@
               <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
             </div>
             <div class="cabinet">
-              <a href="#">
-                <img src="img/icon/social.png" alt="personal icon">
-                <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
-              </a>
+              <a href="#autorithation-modal" data-uk-modal><img src="img/icon/social.png" alt="personal icon"></a>
+              <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
               <div class="cabinet__dropdown">
-                <p>Вход</p>
-                <p>регистрация</p>
+                <p>Существующий пользователь</p>
+                <form>
+                  <input type="text" placeholder="Телефон или e-mail">
+                  <input type="password" placeholder="Пароль">
+                  <input type="submit" value="Войти">
+                  <a href="#">Восcтановить пароль</a>
+                  <a href="#">Зарегистрироваться</a>
+                </form>
               </div>
             </div>
             <div id="cart" class="cart">
@@ -722,19 +730,22 @@
             <span>
               <ul>
                 <li>
-                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-odnoklassniki"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                  <a href="#"><i class="fab fa-vk"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
                 </li>
               </ul>
             </span>
@@ -791,7 +802,16 @@
         <div class="wc-proceed-to-checkout">
           <a href="#" class="checkout-button">оформить заказ</a>
         </div>
-        <a href="" class="return-shop">Продолжить покупки</a>
+        <a href="" class="return-shop uk-modal-close">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  <!-- autorithation-modal -->
+  <div id="autorithation-modal" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a class="uk-modal-close uk-close"></a>
+      <div class="modal-body">
+        <h2>Вход в личный кабинет</h2>
       </div>
     </div>
   </div>

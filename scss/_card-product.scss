@@ -237,19 +237,10 @@ form#reviews {
   }
   input,
   textarea {
-    font-family: "Montserrat-LightItalic";
-    width: 100%;
-    border: 1px solid $color_search-border;
-    border-radius: 7px;
-    padding: 12px 13px;
-    margin-bottom: 15px;
-    font-size: 0.75em;
-    @include focus-input;
+    @include input;
   }
   textarea {
-    resize: none;
-    height: 110px;
-    margin-bottom: 10px;
+    @include textarea;
   }
   .flex {
     @include flex;
@@ -272,20 +263,6 @@ form#reviews {
     }
   }
   input[type="submit"] {
-    margin-top: 20px;
-    margin-bottom: 0;
-    background-color: $color_footer-bg;
-    text-align: center;
-    color: $color_white;
-    font-family: "Montserrat-Medium";
-    font-size: 1em;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 10px;
-    @include transition;
-    &:hover {
-      background-color: $color_white;
-      color: $color_footer-bg;
-    }
+    @include input-submit;
   }
 }

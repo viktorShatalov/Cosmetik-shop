@@ -270,8 +270,7 @@ jQuery(document).ready(function () {
 
     // cabinet-dropdown
 
-    jQuery('.dropdown__btn').click(function (e) {
-        e.preventDefault();
-        jQuery('.cabinet__dropdown').toggleClass('active')
+    jQuery('.dropdown__btn').click(function () {
+        jQuery('.cabinet__dropdown,.dropdown__btn').toggleClass('active')
     });
 })

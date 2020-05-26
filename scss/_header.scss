@@ -38,17 +38,27 @@
   }
   .cabinet {
     position: relative;
+    margin: 0 15px 0 25px;
     a {
-      margin: 0 30px 0 25px;
       @include transition;
       &:hover {
         @include hvrOpacity;
       }
     }
+    span {
+      cursor: pointer;
+      img {
+        @include transition;
+      }
+      &.active img {
+        transform: rotate(180deg);
+      }
+    }
     .cabinet__dropdown {
       position: absolute;
-      top: 15px;
-      left: 0;
+      top: 40px;
+      right: 200%;
+      transform: translate(50%, 2%);
       z-index: 1;
       padding: 10px 15px 25px;
       border: 1px solid $color_category-menu-border;
@@ -56,9 +66,58 @@
       @include transition;
       visibility: hidden;
       opacity: 0;
+      width: 235px;
+      background-color: $color_white;
+      &:before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: 85%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+      }
+      &:before {
+        border-style: solid;
+        border-width: 0 13.5px 15px 13.5px;
+        border-color: transparent transparent $color_category-menu-border
+          transparent;
+      }
+      &:after {
+        border-style: solid;
+        border-width: 2px 13px 14px 13px;
+        border-color: transparent transparent $color_white transparent;
+      }
       &.active {
         visibility: visible;
         opacity: 1;
+      }
+      p {
+        font-size: 0.9em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    form {
+      input {
+        @include input;
+        padding: 8px 0;
+        text-align: center;
+      }
+      input[type="submit"] {
+        @include input-submit;
+        margin-top: 0;
+      }
+      a {
+        font-size: 0.6em;
+        text-align: center;
+        border-bottom: 1px solid $color_category-menu-border;
+        margin-bottom: 13px;
+        display: block;
+        width: 122px;
+        margin: 8px auto 0;
       }
     }
   }
@@ -320,9 +379,13 @@
       width: 25px;
       height: 25px;
       text-align: center;
-      padding: 3px 0;
+      padding: 2px 0;
+      @include transition;
       a {
         color: $color_bg_header-top__bg !important;
+      }
+      &:hover {
+        @include hvrOpacity;
       }
     }
   }

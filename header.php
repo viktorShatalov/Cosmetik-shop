@@ -1,5 +1,8 @@
+<?php $curr_set_lan = get_locale();
+$woo_cart_page_id = get_option('woocommerce_cart_page_id');
+echo $curr_set_lan; ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html>
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
@@ -19,7 +22,16 @@
 //pr($translations);
 ?>
 
-<body class=" customize-support">
+<body class="customize-support">
+    <!-- autorithation-modal -->
+    <div id="autorithation-modal" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            <div class="modal-body">
+                <h2>Вход в личный кабинет</h2>
+            </div>
+        </div>
+    </div>
     <header id="header">
         <div class="mobile__content">
             <a class="category__link" href="#">Каталог</a>
@@ -49,10 +61,22 @@
                     <span>
                         <ul>
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('facebook') ?>"><i class="fa fa-facebook-f"></i></a>
+                                <a href="<?php echo carbon_get_theme_option('facebook') ?>"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('odn') ?>"><i class="fa fa-odnoklassniki"></i></a>
+                                <a href="<?php echo carbon_get_theme_option('insta') ?>"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('odn') ?>"><i class="fab fa-odnoklassniki"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('twit') ?>"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('vk') ?>"><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('youtube') ?>"><i class="fab fa-youtube"></i></a>
                             </li>
                         </ul>
                     </span>
@@ -89,9 +113,18 @@
                             <a href="tel:<?php echo carbon_get_theme_option('phone') ?>"><?php echo carbon_get_theme_option('phone') ?></a>
                         </div>
                         <div class="cabinet">
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/icon/social.png" alt="personal icon">
-                            </a>
+                            <a href="#autorithation-modal" data-uk-modal><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon/social.png" alt="personal icon"></a>
+                            <span class="dropdown__btn"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon/arrows_accaunt.png" alt="icon"></span>
+                            <div class="cabinet__dropdown">
+                                <p>Существующий пользователь</p>
+                                <form>
+                                    <input type="text" placeholder="Телефон или e-mail">
+                                    <input type="password" placeholder="Пароль">
+                                    <input type="submit" value="Войти">
+                                    <a href="#">Восcтановить пароль</a>
+                                    <a href="#">Зарегистрироваться</a>
+                                </form>
+                            </div>
                         </div>
                         <div id="cart" class="cart"><a href="#cart-modal" data-uk-modal>
                                 <button class="cart__btn">

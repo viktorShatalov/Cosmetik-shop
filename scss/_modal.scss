@@ -15,178 +15,181 @@ $color_modal-close-btn: rgb(0, 0, 0);
     background-color: $color_modal-bg;
     color: $color_modal-text;
   }
-}
-.modal-body {
-  h2 {
-    max-width: 350px;
-    text-align: center;
-    margin: 15px auto 20px;
-    &::before {
-      left: -52px;
-    }
-  }
-  .cart-item {
-    @include flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid $color_modal-border-item;
-    padding: 15px 0;
-    .item__img {
-      img {
-        width: 70px;
-        height: 70px;
-        object-fit: contain;
+  .modal-body {
+    h2 {
+      max-width: 350px;
+      text-align: center;
+      margin: 15px auto 20px;
+      &::before {
+        left: -52px;
       }
     }
-    .item__name {
-      width: 200px;
-      color: $color_modal-product-name;
-    }
-    .quantity {
-      margin: 0 20px;
-      span {
-        display: block;
-        border: 1px solid $color_search-border;
-        width: 55px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 1em;
-        text-align: center;
-        padding: 8px 0;
-      }
-    }
-    .prices {
-      @include flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin: 0 12px;
-      .strikeout__price {
-        p {
-          text-decoration: line-through;
-          color: $color_strikeout__price;
-        }
-      }
-      .current__price {
-        font-size: 1.125em;
-        font-weight: bold;
-      }
-    }
-    .quantity {
-      margin: 0 20px;
-      input {
-        border: 1px solid $color_search-border;
-        width: 55px;
-        height: 40px;
-        border-radius: 10px;
-        font-size: 1em;
-        text-align: center;
-        padding: 0 0px 0 15px;
-      }
-    }
-    .addToCart {
-      a {
-        position: relative;
-        display: block;
-        background-color: $color_addToCart-bg;
-        width: 270px;
-        height: 60px;
-        padding: 9px 10px;
-        border-radius: 10px;
-        text-align: center;
-        @include transition;
-        border: 1px solid $color_addToCart-bg;
-        &:hover img {
-          filter: invert(0);
-        }
-        &:hover {
-          background-color: $color_addToCart-btn-hover;
-        }
-        img {
-          width: 36px;
-          height: 42px;
-          filter: invert(1);
-          position: absolute;
-          left: 60px;
-          @include transition;
-        }
-        &::after {
-          content: "В Корзину";
-          text-transform: uppercase;
-          color: $color_white;
-          position: absolute;
-          top: 20px;
-          right: 45px;
-          @include transition;
-        }
-        &:hover::after {
-          color: $color_black;
-        }
-      }
-    }
-
-    .product-remove {
-      a {
-        color: $color_modal-remove;
-        font-size: 40px;
-      }
-    }
-  }
-  .order-total {
-    padding: 15px;
-    margin: 15px 0 23px;
-    background-color: $color_modal-order_total-bg;
-    border-radius: 10px;
-    .total-box {
+    .cart-item {
       @include flex;
       justify-content: space-between;
-      p {
-        font-size: 0.9em;
-      }
-    }
-  }
-  .wc-proceed-to-checkout {
-    .checkout-button {
-      display: block;
-      max-width: 300px;
-      text-transform: uppercase;
-      font-size: 1.125em;
-      color: $color_white;
-      background-color: $color_addToCart-bg;
-      border: 1px solid $color_addToCart-bg;
-      text-align: center;
+      align-items: center;
+      border-bottom: 1px solid $color_modal-border-item;
       padding: 15px 0;
-      border-radius: 10px;
-      @include transition;
-      margin: 0 auto 15px;
-      &:hover {
-        color: $color_addToCart-bg;
-        background-color: $color_white;
+      .item__img {
+        img {
+          width: 70px;
+          height: 70px;
+          object-fit: contain;
+        }
+      }
+      .item__name {
+        width: 180px;
+        color: $color_modal-product-name;
+      }
+      .quantity {
+        margin: 0 20px;
+        span {
+          display: block;
+          border: 1px solid $color_search-border;
+          width: 55px;
+          height: 40px;
+          border-radius: 10px;
+          font-size: 1em;
+          text-align: center;
+          padding: 8px 0;
+        }
+      }
+      .prices {
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 12px;
+        .strikeout__price {
+          p {
+            text-decoration: line-through;
+            color: $color_strikeout__price;
+          }
+        }
+        .current__price {
+          font-size: 1.125em;
+          font-weight: bold;
+        }
+      }
+      .quantity {
+        margin: 0 20px;
+        input {
+          border: 1px solid $color_search-border;
+          width: 55px;
+          height: 40px;
+          border-radius: 10px;
+          font-size: 1em;
+          text-align: center;
+          padding: 0 0px 0 15px;
+        }
+      }
+      .addToCart {
+        a {
+          position: relative;
+          display: block;
+          background-color: $color_addToCart-bg;
+          width: 270px;
+          height: 60px;
+          padding: 9px 10px;
+          border-radius: 10px;
+          text-align: center;
+          @include transition;
+          border: 1px solid $color_addToCart-bg;
+          &:hover img {
+            filter: invert(0);
+          }
+          &:hover {
+            background-color: $color_addToCart-btn-hover;
+          }
+          img {
+            width: 36px;
+            height: 42px;
+            filter: invert(1);
+            position: absolute;
+            left: 60px;
+            @include transition;
+          }
+          &::after {
+            content: "В Корзину";
+            text-transform: uppercase;
+            color: $color_white;
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            @include transition;
+          }
+          &:hover::after {
+            color: $color_black;
+          }
+        }
+      }
+
+      .product-remove {
+        a {
+          color: $color_modal-remove;
+          font-size: 40px;
+        }
       }
     }
-  }
-  .return-shop {
-    color: $color_modal-product-name;
-    position: relative;
-    display: block;
-    width: 205px;
-    margin: 0 auto;
-    &::after {
-      content: url(../img/icon/arrows_down.png);
-      position: absolute;
-      top: 1px;
-      transform: rotate(-90deg) scale(1.1);
+    .order-total {
+      padding: 15px;
+      margin: 15px 0 23px;
+      background-color: $color_modal-order_total-bg;
+      border-radius: 10px;
+      .total-box {
+        @include flex;
+        justify-content: space-between;
+        p {
+          font-size: 0.9em;
+        }
+      }
     }
-    &:hover {
-      @include hvrOpacity;
+    .wc-proceed-to-checkout {
+      .checkout-button {
+        display: block;
+        max-width: 300px;
+        text-transform: uppercase;
+        font-size: 1.125em;
+        color: $color_white;
+        background-color: $color_addToCart-bg;
+        border: 1px solid $color_addToCart-bg;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 10px;
+        @include transition;
+        margin: 0 auto 15px;
+        &:hover {
+          color: $color_addToCart-bg;
+          background-color: $color_white;
+        }
+      }
+    }
+    .return-shop {
+      color: $color_modal-product-name;
+      position: relative;
+      display: block;
+      width: 205px;
+      margin: 0 auto;
+      &::after {
+        content: url(../img/icon/arrows_down.png);
+        position: absolute;
+        top: 1px;
+        transform: rotate(-90deg) scale(1.1);
+      }
+      &:hover {
+        @include hvrOpacity;
+      }
     }
   }
 }
+
 .uk-close {
   opacity: 1;
   position: relative;
+  z-index: 2;
   &:after {
     content: url(../img/icon/signs.png);
     margin: 0 0 0 -10px;
   }
 }
+

@@ -1,6 +1,13 @@
 #footer {
   padding: 25px 0 30px;
   background-color: $color_footer-bg;
+  .social {
+    ul {
+      li {
+        padding: 1px 0;
+      }
+    }
+  }
   a,
   p,
   h4 {

@@ -61,10 +61,22 @@
                     <span>
                         <ul>
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('facebook') ?>"><i class="fa fa-facebook-f"></i></a>
+                                <a href="<?php echo carbon_get_theme_option('facebook') ?>"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="<?php echo carbon_get_theme_option('odn') ?>"><i class="fa fa-odnoklassniki"></i></a>
+                                <a href="<?php echo carbon_get_theme_option('insta') ?>"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('odn') ?>"><i class="fab fa-odnoklassniki"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('twit') ?>"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('vk') ?>"><i class="fab fa-vk"></i></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo carbon_get_theme_option('youtube') ?>"><i class="fab fa-youtube"></i></a>
                             </li>
                         </ul>
                     </span>
@@ -86,40 +98,7 @@
     <div class="uk-modal-dialog">
         <a class="uk-modal-close uk-close"></a>
         <div class="modal-body">
-            <h2>Товары в корзине</h2>
-            <div class="cart-item">
-                <div class="item__img">
-                    <img src="img/product/25371.jpg" alt="cart-img">
-                </div>
-                <div class="item__name">
-                    <p>The Golden Secret</p>
-                </div>
-                <div class="quantity">
-                    <form>
-                        <input type="number" name="quantity__number" value="1">
-                    </form>
-                </div>
-                <div class="current__price">
-                    <p>
-                        <span><strong>25 000</strong></span> руб.
-                    </p>
-                </div>
-                <div class="product-remove">
-                    <a href="#">&times;</a>
-                </div>
-            </div>
-            <div class="order-total">
-                <div class="total-box">
-                    <p><strong>Всего сумма:</strong></p>
-                    <span>
-                        <span><strong>25 000</strong></span> руб.
-                    </span>
-                </div>
-            </div>
-            <div class="wc-proceed-to-checkout">
-                <a href="#" class="checkout-button">оформить заказ</a>
-            </div>
-            <a href="" class="return-shop">Продолжить покупки</a>
+            <?php woocommerce_mini_cart(); ?>
         </div>
     </div>
 </div>

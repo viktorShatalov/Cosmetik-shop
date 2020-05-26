@@ -391,9 +391,6 @@ ins {
     right: -20px;
     @include transition;
   }
-  &:focus::after {
-    transform: rotate(360deg);
-  }
   &.close::after {
     transform: rotate(180deg);
   }
