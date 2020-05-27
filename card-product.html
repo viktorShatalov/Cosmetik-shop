@@ -21,24 +21,43 @@
   <!-- header -->
   <header id="header">
     <div class="mobile__content">
-      <a class="category__link" href="http://korzinka11.ru/shop/">Каталог</a>
-      <div class="mobile__content-description">
-        <div class="contacts__phone">
-          <a href="tel:0 (800) 50 77 40">0 (800) 50 77 40</a>
-          <p>
-            с 9:00 до 22:00<br>
-            ежедневно
-          </p>
+      <div class="row conteiner">
+        <div class="burger"><span></span></div>
+        <div class="row__link">
+          <div class="top__box">
+            <div class="mobile__cabinet">
+              <a href="#autorithation-modal" data-uk-modal><img src="img/icon/social.png" alt="personal icon"></a>
+              <span class="dropdown__btn"><img src="img/icon/arrows_accaunt.png" alt="icon"></span>
+              <div class="cabinet__dropdown">
+                <p>Существующий пользователь</p>
+                <form>
+                  <input type="text" placeholder="Телефон или e-mail">
+                  <input type="password" placeholder="Пароль">
+                  <input type="submit" value="Войти">
+                  <a href="#">Восcтановить пароль</a>
+                  <a href="#">Зарегистрироваться</a>
+                </form>
+              </div>
+            </div>
+            <div class="contacts__phone">
+              <a href="tel:0 (800) 50 77 40"><img src="img/icon/technology.png" alt="mobile-phone"></a>
+            </div>
+            <div id="cart" class="cart">
+              <a href="#cart-modal" data-uk-modal>
+                <button class="cart__btn">
+                  <img src="img/icon/commerce-and-shopping.png" alt="cart">
+                  <span class="basket-btn__counter">29</span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="close-menu">
-        <p>Закрыть меню</p>
       </div>
     </div>
     <div class="top__row">
       <div class="conteiner m-auto">
         <div class="social">
-          <p>Присоединяйтесь к нам: </p>
+          <p>Присоединяйтесь <span class="mobile__hide">к нам</span>: </p>
           <span>
             <ul>
               <li>
@@ -63,7 +82,7 @@
           </span>
         </div>
         <div class="change__lang">
-          <p> Выберите язык:</p>
+          <p><span class="mobile__hide">Выберите</span> язык:</p>
           <ul>
             <li><a class="active" href="#">Рус.</a></li>
             <li><a href="#">Укр.</a></li>
@@ -73,12 +92,17 @@
     </div>
     <div class="bottom__row">
       <div class="conteiner m-auto">
+        <div class="mobile__search mobile__content">
+          <button class="search__btn">
+            <img src="img/icon/interface.png" alt="search__btn">
+          </button>
+          <input type="search" name="search" id="input__search" placeholder="Что вы ищите?">
+        </div>
         <div class="bottom__row-top">
           <div class="logo">
             <a href="/">
               <img src="img/logo/logo.png" alt="FaceCare">
             </a>
-            <div class="burger"><span></span></div>
           </div>
           <div class="top__box">
             <div class="contacts__phone">

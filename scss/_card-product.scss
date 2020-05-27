@@ -21,6 +21,7 @@
   .slider-nav {
     margin: 20px 0 0;
     .slider__img {
+      cursor: pointer;
       img {
         width: 80px;
         height: 80px;
@@ -128,7 +129,8 @@
           }
         }
         .addToCart {
-          a {
+          a,
+          .single_add_to_cart_button {
             position: relative;
             display: block;
             background-color: $color_addToCart-bg;
@@ -139,6 +141,7 @@
             text-align: center;
             @include transition;
             border: 1px solid $color_addToCart-bg;
+            cursor: pointer;
             &:hover img {
               filter: invert(0);
             }

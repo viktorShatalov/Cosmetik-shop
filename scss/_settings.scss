@@ -102,10 +102,9 @@ ins {
 }
 // logo
 .logo {
+  width: 260px;
   img {
-    width: 260px;
-    height: 60px;
-    object-fit: contain;
+    width: 100%;
   }
 }
 // sliders settings
@@ -179,7 +178,14 @@ ins {
     top: -75px;
   }
   .slick-prev {
-    right: 10px;
+    right: 20px;
+    top: -79px;
+    &:before {
+      background-color: $color_h2-before-bg;
+      width: 30px;
+      height: 30px;
+      padding: 4px 4px 1px;
+    }
   }
 }
 

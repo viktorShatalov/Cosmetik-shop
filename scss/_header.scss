@@ -158,6 +158,7 @@
     @include flex;
     align-items: center;
     position: relative;
+    justify-content: center;
     .category__link {
       text-transform: uppercase;
       background-color: $color_category__link-bg;

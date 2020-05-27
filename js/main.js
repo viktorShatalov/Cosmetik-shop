@@ -90,14 +90,14 @@ jQuery(document).ready(function () {
                 settings: {
                     arrows: false,
                     dots: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     slidesToShow: 1,
                     arrows: false,
                     dots: false,
@@ -131,7 +131,7 @@ jQuery(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     slidesToShow: 1,
                     arrows: false,
                     dots: false,
@@ -273,4 +273,12 @@ jQuery(document).ready(function () {
     jQuery('.dropdown__btn').click(function () {
         jQuery('.cabinet__dropdown,.dropdown__btn').toggleClass('active')
     });
+
+    // footer menu
+    // if (jQuery(window).width() > 799) {
+    // } else {
+        jQuery('#footer .footer__nav ul').on('click', function () {
+            jQuery(this).find('li,h4').toggleClass('active')
+        })
+    // }
 })

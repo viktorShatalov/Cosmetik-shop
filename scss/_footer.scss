@@ -16,14 +16,17 @@
     text-transform: uppercase;
   }
   .conteiner {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    grid-gap: 15px;
+    @include flex;
+    flex-wrap: nowrap;
+    .logo {
+      margin-right: 15px;
+    }
   }
   .footer__content {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 15px;
+    max-width: 75%;
   }
   h4 {
     font-size: 1.1em;
@@ -36,7 +39,6 @@
     ul {
       li {
         font-size: 0.85em;
-        width: 190px;
         margin-bottom: 10px;
         a {
           @include transition;

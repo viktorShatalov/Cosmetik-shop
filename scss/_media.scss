@@ -6,7 +6,6 @@
 @media only screen and (min-width: 320px) and (max-width: 880px) {
   body {
     // overflow-x: hidden;
-    font-size: 16px;
   }
   .map {
     overflow: hidden;
@@ -31,51 +30,13 @@
   #header .bottom__row #cart,
   .menu__items,
   .cabinet,
-  #header .bottom__row .catalog__menu,
   #header .bottom__row .search,
   #header .bottom__row .free_shipping,
   #header .bottom__row .contacts__phone,
   .mobile__hide {
     display: none;
   }
-  #header .bottom__row #cart {
-    position: absolute;
-    right: 5%;
-    bottom: 10px;
-    background-color: $color_bg_header-bottom__row;
-    border-radius: 50%;
-    z-index: 6;
-    width: 60px;
-    height: 60px;
-    a {
-      color: transparent;
-    }
-    .cart__btn {
-      &::after {
-        content: url(../img/icon/noun_cart.png);
-        position: absolute;
-        top: -13px;
-        right: -27px;
-        width: 25px;
-      }
-      .basket-btn__counter {
-        border: 1px solid;
-        top: -19px;
-        right: -49px;
-        z-index: 7;
-      }
-      a,
-      img {
-        display: none;
-      }
-    }
-  }
-  #header {
-    border-bottom: none;
-    .bottom__row {
-      padding: 0;
-    }
-  }
+
   .logo {
     margin: 15px auto;
   }
@@ -95,7 +56,7 @@
           display: flex;
           align-items: center;
           .mobile__cabinet {
-            margin: 0;
+            margin: 12px 0 0;
             .cabinet__dropdown {
               top: 30px;
               right: 10px;
@@ -111,6 +72,30 @@
           margin: 0 15px;
         }
       }
+    }
+    .social,
+    .change__lang {
+      p {
+        margin: 0 5px 5px 0;
+      }
+    }
+    .change__lang {
+      line-height: 1.4;
+      p {
+        &:first-letter {
+          font-size: 130%;
+          font-family: "Montserrat-Regular";
+        }
+      }
+    }
+    .mobile__search {
+      margin: 5px 0;
+      input {
+        width: 100% !important;
+      }
+    }
+    .catalog__menu {
+      width: 100%;
     }
   }
   .mobile__content.active {
@@ -204,6 +189,15 @@
   }
   // *********************************
 
+  #last__slider {
+    .conteiner {
+      padding: 0;
+    }
+    img {
+      width: 100vw;
+    }
+  }
+
   .category__ptofuct-content .category__items {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     .item {
@@ -240,11 +234,60 @@
     }
   }
   #footer {
-    .conteiner,
+    padding: 25px 0 0;
     .footer__content,
     .footer__nav {
       grid-template-columns: 1fr;
       justify-self: center;
+      text-align: center;
+    }
+    .footer__content {
+      max-width: 100%;
+    }
+    .conteiner {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      .logo {
+        margin-right: auto;
+      }
+    }
+    .footer__nav {
+      ul {
+        h4 {
+          position: relative;
+          width: 120px;
+          margin: 0 auto 25px;
+          &:after {
+            content: url(../img/icon/arrows_accaunt.png);
+            position: absolute;
+            filter: invert(1);
+            transform: scale(1.1);
+            right: -25px;
+            top: -2px;
+            @include transition;
+          }
+          &.active {
+            &:after {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        li {
+          display: none;
+          &.active {
+            display: block;
+          }
+          &:last-child {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+    .social {
+      justify-content: center;
+      p {
+        text-transform: uppercase;
+      }
     }
   }
 
