@@ -1,4 +1,5 @@
 @import "_mixin";
+@import "_mixin-form";
 @import "_variables";
 
 * {
@@ -367,5 +368,41 @@ ins {
   }
   &.close::after {
     transform: rotate(180deg);
+  }
+}
+// registration
+#registration {
+  h2 {
+    width: 245px;
+    margin: 0 auto 35px;
+  }
+  form {
+    background-color: $color_ordering-form-bg;
+    padding: 30px;
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+    legend {
+      margin-bottom: 15px;
+    }
+    input,
+    textarea {
+      @include input;
+      &::placeholder {
+        color: $color_black;
+      }
+    }
+    textarea {
+      @include textarea;
+      margin-bottom: 0;
+    }
+    input[type="checkbox"] {
+      width: 20px;
+    }
+    button[type="submit"] {
+      @include input-submit;
+      padding: 15px 0;
+      width: 100%;
+    }
   }
 }
