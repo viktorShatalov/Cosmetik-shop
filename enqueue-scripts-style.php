@@ -33,6 +33,8 @@ if (!function_exists('ast_styles')) {
 			'/assets/css/slick.css', array(), null, 'all');
 		wp_enqueue_style('uikit.min', get_template_directory_uri() .
 			'/assets/css/uikit.min.css', array(), null, 'all');
+		wp_enqueue_style('fantawesome', get_template_directory_uri() .
+			'/assets/css/all.min.css', array(), null, 'all');
 		wp_enqueue_style('style', get_template_directory_uri() .
 			'/assets/css/style.min.css', array(), null, 'all');
 	}

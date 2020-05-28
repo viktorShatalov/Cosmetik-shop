@@ -23,6 +23,7 @@
 
 @mixin input-submit {
   margin-top: 20px;
+  border: 1px solid $color_search-border;
   margin-bottom: 0;
   background-color: $color_footer-bg;
   text-align: center;

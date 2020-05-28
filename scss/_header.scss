@@ -108,9 +108,12 @@
         padding: 8px 0;
         text-align: center;
       }
-      input[type="submit"] {
+      input[type="submit"],
+      button {
         @include input-submit;
+        padding: 8px 0;
         margin-top: 0;
+        max-width: 100%;
       }
       a {
         font-size: 0.6em;

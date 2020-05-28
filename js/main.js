@@ -146,7 +146,6 @@ jQuery(document).ready(function () {
     jQuery('.slider-for').slick({
         arrows: false,
         dots: false,
-        infinite: false,
         autoplay: false,
         lazyLoad: "progressive",
         asNavFor: '.slider-nav',
@@ -155,27 +154,16 @@ jQuery(document).ready(function () {
         slidesToScroll: 1,
         draggable: false,
         centerMode: true,
+        swipe: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 480,
                 settings: {
-                    dots: false,
-                    draggable: true,
-                    fade: false,
+                    draggable: false,
                 }
-            },
-            // {
-            //     breakpoint: 480,
-            //     settings: {
-            //         centerMode: true,
-            //         slidesToShow: 1,
-            //         arrows: false,
-            //         dots: false,
-            //     }
-            // }
+            }
         ]
     });
-
 
     jQuery('.slider-nav').slick({
         arrows: true,
@@ -187,19 +175,7 @@ jQuery(document).ready(function () {
         autoplay: false,
         focusOnSelect: true,
         draggable: false,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    centerMode: true,
-                    centerPadding: '0',
-                    slidesToShow: 1,
-                    arrows: false,
-                    dots: false,
-                }
-            }
-        ]
+        infinite: true,
     });
 
 
@@ -220,6 +196,8 @@ jQuery(document).ready(function () {
         e.preventDefault()
     });
 
+
+    // if ($(window).width() > 800) {
     void function () {
         "use strict";
 
@@ -249,6 +227,8 @@ jQuery(document).ready(function () {
             selectSubcategory.style.display = 'block';
         }
     }();
+    // }
+
 
     // show text
 
@@ -275,10 +255,9 @@ jQuery(document).ready(function () {
     });
 
     // footer menu
-    // if (jQuery(window).width() > 799) {
-    // } else {
-        jQuery('#footer .footer__nav ul').on('click', function () {
-            jQuery(this).find('li,h4').toggleClass('active')
-        })
-    // }
+
+    jQuery('#footer .footer__nav ul').on('click', function () {
+        jQuery(this).find('li,h4').toggleClass('active')
+    })
+
 })

@@ -360,78 +360,63 @@
           </ul>
         </div>
         <div class="head">
-          <h2>
+          <h1>
             Оформление заказа
-          </h2>
+          </h1>
         </div>
-        <div class="cart__content">
+        <div class="ordering__content">
           <form action="" class="checkout">
-            <div id="customer_details">
-              <legend>
-                Контактные данные
-              </legend>
-              <div class="legend__items first">
-                <div class="item">
-                  <label for="billing_first_name">Имя</label>
-                  <input type="text" name="billing_first_name" class="input-text" id="billing_first_name"
-                    placeholder="Введите имя получателя">
-                </div>
-                <div class="item">
-                  <label for="billing_phone">Номер телефона</label>
-                  <input type="tel" name="billing_phone" class="input-text" id="billing_phone"
-                    placeholder="Введите телефон получателя">
-                </div>
+            <div class="flex__box">
+              <div id="customer_details">
+                <legend>
+                  Персональные данные
+                </legend>
+                <p>
+                  <label>* Мобильный телефон</label>
+                  <input type="tel" placeholder="+38 (____) ___ - __ - __">
+                </p>
+                <p>
+                  <label>* Электронная почта</label>
+                  <input type="email">
+                </p>
+                <p>
+                  <label>* Фамилия</label>
+                  <input type="text">
+                </p>
+                <p>
+                  <label>* Имя</label>
+                  <input type="text">
+                </p>
+                <p>
+                  <label>* Отчество</label>
+                  <input type="text">
+                </p>
+                <p>
+                  <label>Населенный пункт</label>
+                  <input type="text">
+                </p>
+                <p>
+                  <label>Комментарий к заказу</label>
+                  <textarea></textarea>
+                </p>
               </div>
-              <div class="legend__items method__delivery">
-                <div class="box">
-                  <label for="adress">Введите адрес доставки</label>
-                  <input type="text" name="adress" placeholder="Например, Краснодар, ул. Красная, д.1, стр. 1">
-                </div>
-                <div class="box">
-                  <label for="house">Дом</label>
-                  <input type="text" name="house" id="">
-                </div>
-                <div class="box">
-                  <label for="house_1">Корпус</label>
-                  <input type="text" name="house_1" id="">
-                </div>
-                <div class="box">
-                  <label for="house_2">Строение</label>
-                  <input type="text" name="house_2" id="">
-                </div>
-                <div class="box">
-                  <label for="house_3">Подъёзд</label>
-                  <input type="text" name="house_3" id="">
-                </div>
-                <div class="box">
-                  <label for="house_4">Этаж</label>
-                  <input type="text" name="house_4" id="">
-                </div>
-                <div class="box">
-                  <label for="house_5">Квартира</label>
-                  <input type="text" name="house_5" id="">
-                </div>
-              </div>
-            </div>
-            <div id="order_review">
-              <h3 id="order_review_heading">Ваш заказ</h3>
-              <div class="woocommerce-checkout-review-order-table">
-                <div class="totall">
-                  <div class="order-total">
-                    <p>Итого: <span>500</span> ₽</p>
-                  </div>
-                  <div class="weight">
-                    <p>Общий вес заказа: <span>500</span> ₽</p>
+              <div id="order_review">
+                <h3 id="order_review_heading">Ваш заказ</h3>
+                <div class="woocommerce-checkout-review-order-table">
+                  <div class="totall">
+                    <div class="order-total">
+                      <p>Итого: <span>500</span> ₽</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="wc_payment_method payment_method_cod">
-                <h3>Выберите метод оплаты</h3>
-                <div class="payment_method_cod">
-                  <p>Оплата наличными</p>
-                </div>
-                <div class="payment_method_cod">
-                  <p>Оплата картой</p>
+                <div class="wc_payment_method payment_method_cod">
+                  <h3>Выберите метод оплаты</h3>
+                  <div class="payment_method_cod">
+                    <p>Оплата наличными</p>
+                  </div>
+                  <div class="payment_method_cod">
+                    <p>Оплата картой</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -440,9 +425,6 @@
                 value="Подтвердить заказ" data-value="Подтвердить заказ">Подтвердить заказ</button>
             </div>
           </form>
-        </div>
-        <div class="conteiner m-auto">
-          <a href="#">Далее</a>
         </div>
       </div>
     </section>
