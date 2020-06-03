@@ -4,7 +4,8 @@
 
 // Mobile *******************************************************************************************
 @media only screen and (min-width: 320px) and (max-width: 880px) {
-  body {
+  body,
+  html {
     overflow-x: hidden;
   }
 
@@ -511,6 +512,13 @@
     }
     .bottom__row {
       padding: 0 15px;
+    }
+  }
+  #category__product,
+  #new__product,
+  #best__product {
+    .conteiner {
+      padding: 0 !important;
     }
   }
 }
