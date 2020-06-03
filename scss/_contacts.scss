@@ -48,6 +48,22 @@ $color_text: rgb(64, 64, 64);
         flex-wrap: nowrap;
         justify-content: space-between;
         margin-bottom: 30px;
+        .map {
+          overflow: hidden;
+          padding-bottom: 43.25%;
+          position: relative;
+          // height: 0;
+          width: 100%;
+          max-width: 620px;
+          & iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+          }
+        }
+
         form {
           background-color: $color_elem-bg;
           max-width: 240px;

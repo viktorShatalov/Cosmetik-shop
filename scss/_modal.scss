@@ -10,6 +10,7 @@ $color_modal-form-item-bg: rgb(248, 248, 248);
 #cart-modal {
   .uk-modal-dialog {
     max-width: 550px;
+    width: 98%;
   }
   .modal-body {
     h2 {
@@ -182,6 +183,7 @@ $color_modal-form-item-bg: rgb(248, 248, 248);
 #autorithation-modal {
   .uk-modal-dialog {
     max-width: 810px;
+    width: 98%;
   }
   .modal-body_autorithation {
     h2 {
@@ -189,60 +191,60 @@ $color_modal-form-item-bg: rgb(248, 248, 248);
       max-width: 455px;
       margin: 0 auto 35px;
     }
-    .content {
-      @include flex;
-      justify-content: space-between;
-      legend,
-      h4 {
-        font-size: 1.125em;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 15px;
-      }
-      .left,
-      .right {
-        flex: 0 1 48%;
-      }
-      .left {
-        form {
-          input {
-            @include input;
-          }
-          input[type="submit"] {
-            @include input-submit;
-            max-width: 180px;
-            margin-top: 0;
-          }
-        }
-      }
-      .right {
-        border-color: $color_modal-form-item-bg;
-        padding: 0 18px;
-        border-radius: 10px;
-        p {
-          line-height: 1.5;
-          font-size: 0.78em;
-        }
-        a {
+  }
+  .content {
+    @include flex;
+    justify-content: space-between;
+    legend,
+    h4 {
+      font-size: 1.125em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .left,
+    .right {
+      flex: 0 1 48%;
+    }
+    .left {
+      form {
+        input {
           @include input;
+        }
+        input[type="submit"] {
           @include input-submit;
-          display: block;
-          margin-top: 38px;
+          max-width: 180px;
+          margin-top: 0;
         }
       }
-      .left__form-footer {
-        @include flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        p {
-          font-size: 0.78em;
-          max-width: 180px;
-          a {
-            border-bottom: 1px solid $color_modal-border-item;
-            &:hover {
-              @include hvrOpacity;
-            }
+    }
+    .right {
+      border-color: $color_modal-form-item-bg;
+      padding: 0 18px;
+      border-radius: 10px;
+      p {
+        line-height: 1.5;
+        font-size: 0.78em;
+      }
+      a {
+        @include input;
+        @include input-submit;
+        display: block;
+        margin-top: 38px;
+      }
+    }
+    .left__form-footer {
+      @include flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 0.78em;
+        max-width: 180px;
+        a {
+          border-bottom: 1px solid $color_modal-border-item;
+          &:hover {
+            @include hvrOpacity;
           }
         }
       }
@@ -265,5 +267,37 @@ $color_modal-form-item-bg: rgb(248, 248, 248);
   &:after {
     content: url(../img/icon/signs.png);
     margin: 0 0 0 -10px;
+    font-family: "Montserrat-Regular" !important;
+  }
+}
+
+// Mobile *******************************************************************************************
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  #cart-modal .modal-body h2::before {
+    left: 20px;
+  }
+  #autorithation-modal {
+    .content {
+      .right,
+      .left {
+        flex: 0 1 100%;
+        margin: 0 0 25px;
+      }
+      .left__form-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        button[type="submit"] {
+          margin-bottom: 10px;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .right {
+        p {
+          text-align: center;
+        }
+      }
+    }
   }
 }

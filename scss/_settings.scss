@@ -109,32 +109,30 @@ ins {
   }
 }
 // sliders settings
-.first__slider,
-.last__slider {
-  .slick-dots {
-    position: absolute;
-    display: flex;
-    bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    li {
-      background-color: $color_slider_dot-li_bg;
-      margin: 0 7.5px;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
+.slick-dots {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  li {
+    background-color: $color_slider_dot-li_bg;
+    margin: 0 7.5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $color_slider_dot-li_shadow;
+    button {
+      color: transparent;
+      background-color: transparent;
+    }
+    &.slick-active {
       box-shadow: 0 0 0 1px $color_slider_dot-li_shadow;
-      button {
-        color: transparent;
-        background-color: transparent;
-      }
-      &.slick-active {
-        box-shadow: 0 0 0 1px $color_slider_dot-li_shadow;
-        background-color: $color_slider_dot-li_shadow;
-      }
+      background-color: $color_slider_dot-li_shadow;
     }
   }
 }
+
 // sliders arrows
 .slick-prev,
 .slick-next {
@@ -189,6 +187,7 @@ ins {
     }
   }
 }
+
 
 .slider-for,
 .slider-nav {

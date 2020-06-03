@@ -8,7 +8,7 @@
   width: 100%;
   background-color: $color_left_sidbar_bg;
   color: $color_left_sidbar_text;
-  padding: 22px;
+  padding: 20px 10px 20px 0;
   margin-bottom: 20px;
   a {
     color: $color_left_sidbar_text;
@@ -78,9 +78,7 @@
     background-color: $color_white;
     max-width: 75.4399%;
     width: 100%;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: 30px 0 10px;
+    padding: 30px 10px 10px;
     .name__of__category {
       h2 {
         color: $color_header_link;
@@ -100,18 +98,6 @@
       border-bottom: 1px solid $color_category-menu-border;
       .sort_by {
         @include flex;
-        align-items: center;
-        position: relative;
-        height: fit-content;
-        &:after {
-          content: url(../img/icon/arrows_down.png);
-          position: absolute;
-          right: 5px;
-          top: 10px;
-        }
-      }
-      .woocommerce-ordering {
-        margin: 10px 0;
       }
       legend {
         color: $color_header_link;
@@ -122,7 +108,7 @@
         font-weight: bold;
         font-size: 1em;
         font-family: "Montserrat-Regular";
-        appearance: none;
+        // appearance: none;
       }
     }
     .product__description {
@@ -171,5 +157,83 @@
         }
       }
     }
+  }
+}
+
+// woof-filter
+.woof_checkbox_label {
+  margin-left: 0;
+  font-size: 0.89em;
+}
+.woof_list {
+  position: relative;
+  label {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.7em;
+  }
+}
+.woof_childs_list_opener span {
+  background-size: contain !important;
+  width: 10px;
+  height: 10px;
+}
+.woof_container_inner {
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+.woof_submit_search_form_container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.woof_reset_search_form {
+  @include input-submit;
+  padding: 10px;
+  font-size: 0.6em;
+  width: 175px;
+  margin-top: 0;
+}
+.woof_radio_label {
+  margin-left: 0;
+}
+.woof_price_search_container {
+  background-color: $color_ordering-form-bg;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  .widget_price_filter {
+    background-color: $color_ordering-form-bg;
+  }
+  h4 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  .price_slider_amount .price_label {
+    float: none !important;
+    font-size: 0.7125em;
+    text-align: left !important;
+  }
+}
+.woof .widget_price_filter .price_slider_amount {
+  text-align: left !important;
+}
+.woof .widget_price_filter .ui-slider {
+  .ui-slider-handle {
+    background-color: $color_ui-slider-handle;
+    border: none;
+  }
+  .ui-slider-range {
+    background-color: $color_white;
+  }
+}
+.woof_container_inner {
+  position: relative;
+  a.woof_front_toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: end;
   }
 }

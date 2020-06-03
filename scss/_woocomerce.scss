@@ -44,6 +44,7 @@
 
 .woocommerce {
   background: $color_bg-main;
+  margin: 0 auto;
   .page {
     background: $color_bg-main;
     padding: 20px 60px;
@@ -100,12 +101,6 @@
   }
   .woocommerce-checkout-review-order-table {
     @include flex;
-    .cart_item,
-    .totall {
-      padding: 10px;
-      height: 100%;
-    }
-
     .order-total {
       padding: 10px 0 20px;
       p {
@@ -119,15 +114,52 @@
       }
     }
   }
-  .wc_payment_method {
-    margin-bottom: 20px;
+
+  // table
+  .woocommerce-checkout-review-order-table {
+    .cart-subtotal {
+      display: none;
+    }
+    thead,
+    tbody {
+      tr {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        th,
+        td {
+          padding: 10px 0px;
+          text-align: left;
+        }
+      }
+    }
+    thead {
+      margin: 0 30px 0 0;
+    }
+    tfoot {
+      margin: 10px 0;
+      tr {
+        display: block;
+      }
+    }
+    .woocommerce-shipping-totals {
+      th {
+        padding-right: 16px;
+      }
+    }
+    .order-total {
+      th {
+        padding-right: 50px;
+      }
+    }
   }
+
   // woocommerce-order
   .woocommerce-order {
     .woocommerce-notice {
       color: $color_footer-linkMenu-active;
       font-weight: bold;
       font-size: 1.5em;
+      text-align: center;
     }
     ul {
       li {
@@ -255,6 +287,15 @@
       }
     }
   }
+  .woocommerce-orders-table {
+    thead,
+    tbody {
+      tr {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
   .woocommerce-orders-table__row--status-processing {
     text-align: center;
   }
@@ -273,4 +314,39 @@
     font-size: 0.5em;
     margin: 0;
   }
+}
+form.woocommerce-ResetPassword,
+form.woocommerce-EditAccountForm {
+  p {
+    text-align: center;
+    &.woocommerce-form-row {
+      @include flex;
+      flex-direction: column;
+      label {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  fieldset {
+    margin: 15px 0 0;
+  }
+  legend {
+    font-weight: bold;
+    font-size: 1.125em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  input,
+  button {
+    @include input;
+    max-width: 320px;
+    margin: 0 auto 10px;
+  }
+  button {
+    @include input-submit;
+    margin-top: 0;
+  }
+}
+#wcus_np_billing_fields {
+  max-width: 333px;
 }

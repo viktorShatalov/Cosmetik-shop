@@ -19,7 +19,9 @@
     @include flex;
     flex-wrap: nowrap;
     .logo {
-      margin-right: 15px;
+      margin-right: 65px;
+      margin-top: -20px;
+      width: 200px;
     }
   }
   .footer__content {
@@ -29,7 +31,7 @@
     max-width: 75%;
   }
   h4 {
-    font-size: 1.1em;
+    font-size: 0.89em;
     margin-bottom: 25px;
   }
 
@@ -38,7 +40,7 @@
     grid-template-columns: repeat(3, 1fr);
     ul {
       li {
-        font-size: 0.85em;
+        font-size: 0.89em;
         margin-bottom: 10px;
         a {
           @include transition;
@@ -70,19 +72,4 @@
     font-size: 0.8em;
     text-align: center;
   }
-}
-.mailpoet_paragraph {
-  margin: 0 auto;
-}
-.mailpoet_message {
-  position: absolute;
-  bottom: -15px;
-  font-size: small;
-}
-.parsley-custom-error-message {
-  color: $color_danger;
-  max-width: 300px;
-}
-.mailpoet_validate_success {
-  color: rgba(0, 128, 0, 0.85);
 }

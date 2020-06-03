@@ -21,13 +21,49 @@
       left: -30px;
     }
   }
+  h2 {
+    max-width: 440px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  table.woocommerce-table--order-details {
+    margin: 0 auto;
+    thead,
+    tbody,
+    tfoot {
+      tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 7px 0;
+      }
+    }
+    tbody {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  section.woocommerce-customer-details address,
+  ul.woocommerce-thankyou-order-details {
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .flex__box {
-    @include flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    flex-wrap: nowrap;
     background-color: $color_ordering-form-bg;
     padding: 30px 0;
+    margin: 0 0 20px;
+  }
+  .woocommerce-billing-fields {
+    h3 {
+      padding: 0 0 20px;
+      font-size: 1.25em;
+    }
   }
   #customer_details,
   #order_review {
@@ -77,16 +113,25 @@
   }
 }
 .checkout {
-  padding: 30px 0;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
+  a[data-uk-modal] {
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    @include transition;
+    &:hover {
+      @include hvrOpacity;
+    }
+  }
   legend {
     margin-bottom: 15px;
   }
   input,
   textarea {
     @include input;
+    margin-top: 7px;
     &::placeholder {
       color: $color_black;
     }
@@ -101,10 +146,30 @@
     max-width: 360px;
     width: 100%;
   }
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 20px;
+  }
 }
-.form-row.place-order{
+.form-row.place-order {
   text-align: center;
 }
 .m-top {
   margin-top: 20px;
+}
+#wcus_np_billing_fields {
+  .select2-container--default .select2-selection--single {
+    @include input;
+    padding: 7px 13px;
+    margin: 10px 0;
+    height: 100%;
+  }
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  top: 19px;
+}
+.wc-urk-shipping-form-group {
+  padding-bottom: 0;
 }

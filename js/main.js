@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
 
+    // preloader
+
     function preloader() {
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
         var preloader = jQuery('#preloader');
@@ -25,26 +27,10 @@ jQuery(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
-        autoplay: false,
+        autoplay: true,
         adaptiveHeight: true,
         autoplaySpeed: 3500,
         centerMode: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                }
-            },
-        ]
     });
 
     jQuery('.slider__brands').slick({
@@ -54,17 +40,10 @@ jQuery(document).ready(function () {
         lazyLoad: "progressive",
         slidesToShow: 5,
         slidesToScroll: 2,
-        autoplay: false,
+        autoplay: true,
         adaptiveHeight: true,
         autoplaySpeed: 3500,
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
-            },
             {
                 breakpoint: 480,
                 settings: {
@@ -86,22 +65,12 @@ jQuery(document).ready(function () {
         variableWidth: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-            {
                 breakpoint: 480,
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
-                    arrows: false,
-                    dots: false,
-                    // centerMode: true,
+                    arrows: true,
+                    centerMode: true,
                 }
             }
         ]
@@ -112,29 +81,20 @@ jQuery(document).ready(function () {
         dots: false,
         infinite: true,
         lazyLoad: "progressive",
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         slidesToShow: 5,
         variableWidth: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3500,
         variableWidth: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                }
-            },
-            {
                 breakpoint: 480,
                 settings: {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    arrows: false,
-                    dots: false,
+                    slidesToScroll: 2,
+                    slidesToShow: 2,
+                    arrows: true,
+                    dots: true,
                     // centerMode: true,
                 }
             }
@@ -190,44 +150,51 @@ jQuery(document).ready(function () {
     })
 
     // category dropdown menu
-
-    jQuery(".category__link").click(function (e) {
-        jQuery('.category,.category__link').toggleClass('active', 'slow')
-        e.preventDefault()
-    });
-
-
-    // if ($(window).width() > 800) {
-    void function () {
-        "use strict";
-
-        const categoriesItems = document.querySelectorAll('.category__menu-items>li');
-        const categoriesSubMenuItems = document.querySelectorAll('.box__sub-menu>*');
-
-        Array.from(categoriesItems).forEach(item => {
-            item.addEventListener('mouseenter', (e) => {
-                showSubcategory(e);
-            })
+    if (window.innerWidth < 425) {
+        jQuery(".category__link").click(function (e) {
+            jQuery('.category,.category__link').toggleClass('active')
+            e.preventDefault()
         });
+    }
 
-        Array.from(categoriesSubMenuItems).forEach(item => {
-            item.addEventListener('mouseleave', hideSubcategories);
+    if (window.innerWidth > 425) {
 
+        jQuery(".category__link").mouseover(function (e) {
+            jQuery('.category,.category__link').toggleClass('active')
+            e.preventDefault()
         });
+        jQuery('body').click(function () {
+            setTimeout(function () {
+                jQuery('.category,.category__link').removeClass('active')
 
-        function hideSubcategories() {
-            Array.from(categoriesSubMenuItems).forEach(item => item.style.display =
-                'none');
-        }
+            }, 300)
+        })
 
-        function showSubcategory(e) {
-            hideSubcategories();
-            const selectSubcategory = document.querySelector(
-                `.category__sub-menu${e.target.dataset.filter}`);
-            selectSubcategory.style.display = 'block';
-        }
-    }();
-    // }
+        void function () {
+
+            const categoriesItems = document.querySelectorAll('.category__menu-items>li');
+            const categoriesSubMenuItems = document.querySelectorAll('.box__sub-menu>*');
+
+            Array.from(categoriesItems).forEach(item => {
+                item.addEventListener('mouseenter', (e) => {
+                    showSubcategory(e);
+                })
+            });
+
+            // Array.from(categoriesSubMenuItems).forEach(item => item.style.display = 'none'
+            // );
+
+            function hideSubcategories() {
+                Array.from(categoriesSubMenuItems).forEach(item => item.style.display = 'none');
+            }
+
+            function showSubcategory(e) {
+                hideSubcategories();
+                const selectSubcategory = document.querySelector(`.category__sub-menu${e.target.dataset.filter}`);
+                selectSubcategory.style.display = 'block';
+            }
+        }();
+    }
 
 
     // show text
@@ -259,5 +226,8 @@ jQuery(document).ready(function () {
     jQuery('#footer .footer__nav ul').on('click', function () {
         jQuery(this).find('li,h4').toggleClass('active')
     })
+
+    // Перемещаю элементы в корзине
+    jQuery('.col-1').append(jQuery('#payment'));
 
 })
