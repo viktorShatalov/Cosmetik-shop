@@ -202,12 +202,10 @@
     .category {
       z-index: 4;
       width: 100%;
-      background-color: $color_bg_category-menu;
       position: absolute;
       top: 41px;
       left: 0;
       display: none;
-      border-radius: 10px;
       &.active {
         display: block;
       }
@@ -229,7 +227,7 @@
         border: 1px solid $color_category-menu-border;
         border-top: none;
         border-bottom-left-radius: 10px;
-        padding: 10px 0 0;
+        padding: 10px 0;
         li {
           @include transition;
           white-space: initial;
